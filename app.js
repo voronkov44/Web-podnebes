@@ -18,6 +18,18 @@ app.get("/", (req, res) => {
     res.render("home");  // Теперь мы используем EJS для рендеринга home.ejs
 });
 
+app.get("/viza", (req, res) => {
+    res.render("viza");
+});
+
+app.get("/home2", (req, res) => {
+    res.render("home2");
+});
+
+app.get("/migration", (req, res) => {
+    res.render("migration");
+});
+
 // Обработка 404 ошибки
 app.use((req, res) => {
     res.status(404).send("404: Страница не найдена");
