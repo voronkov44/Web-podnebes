@@ -111,7 +111,7 @@ body {
 }
 
 /* Заголовок */
-.visa-title {
+.visa-oformlenie {
     font-size: 2.7rem; /* Увеличен размер заголовка */
     font-weight: bolder;
     color: #ffffff;
@@ -119,7 +119,7 @@ body {
 
 }
 
-.visa-title span {
+.visa-oformlenie span {
     color: #e54e2e;
 }
 

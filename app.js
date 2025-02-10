@@ -19,6 +19,7 @@ app.get("/", (req, res) => {
 });
 
 
+
 app.get("/footer", (req, res) => {
     res.render("footer");
 })
