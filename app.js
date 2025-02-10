@@ -22,10 +22,6 @@ app.get("/viza", (req, res) => {
     res.render("viza");
 });
 
-app.get("/home2", (req, res) => {
-    res.render("home2");
-});
-
 app.get("/migration", (req, res) => {
     res.render("migration");
 });
