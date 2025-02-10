@@ -18,8 +18,15 @@ app.get("/", (req, res) => {
     res.render("home");  // Теперь мы используем EJS для рендеринга home.ejs
 });
 
-app.get("/viza", (req, res) => {
-    res.render("viza");
+
+
+app.get("/footer", (req, res) => {
+    res.render("footer");
+})
+
+app.get("/logistics", (req, res) => {
+    res.render("logistics");
+
 });
 
 app.get("/migration", (req, res) => {
