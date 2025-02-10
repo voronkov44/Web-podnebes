@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Поднебес</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/logistics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="General center">
+    <h1 align="center"><span style="color: rgb(255, 88, 29);">Логистические</span> услуги</h1>
+    <div class="road">
+        <div class="lines">
+            <div class="line_1">
+                <div class="shape_1">Таможенное оформление</div>
+            </div>
+            <div class="line_2">
+                <div class="shape_2">Поиск и подбор товаров</div>
+            </div>
+            <div class="line_3">
+                <div class="shape_3">Сопровождение на выставках</div>
+            </div>
+            <div class="line_4">
+                <div class="shape_4">Перевозка грузов от 30кг</div>
+            </div>
+            <div class="line_5">
+                <div class="shape_5">Экспресс перевозки документов<br>и мелких грузов</div>
+            </div>
+        </div>
+    </div>
+    <div class="icons-container">
+        <div class="icon-item">
+            <img src="img/train.png" alt="train">
+            <div class="icon-text">Ж/Д перевозки</div>
+        </div>
+        <div class="icon-item">
+            <img src="img/ship.png" alt="ship">
+            <div class="icon-text">Морские перевозки</div>
+        </div>
+        <div class="icon-item">
+            <img src="img/plane.png" alt="plane">
+            <div class="icon-text">Авиаперевозки</div>
+        </div>
+    </div>
+    <div class="form">
+        <h2>Узнайте условия доставки<br>и рассчитайте её <span style="color: rgb(255, 88, 29)">стоимость</span></h2>
+        <form method="get" class="cargo-form">
+            <p class="form_title_name">Наименование груза</p>
+            <input type="text" name="Cargo name" class="cargo-form-input" placeholder="Например: автозапчасти">
+            <div class="cargo-weight-volume">
+                <div class="weight_title_input">
+                    <p class="form_title_weight">Вес груза</p>
+                    <div class="unit_group">
+                        <input type="text" name="Cargo weight" class="cargo-form-input">
+                        <span class="unit">кг</span>
+                    </div>
+                </div>
+                <div class="volume_title_input">
+                    <p class="form_title_volume">Объём груза</p>
+                    <div class="unit_group">
+                        <input type="text" name="Cargo volume" class="cargo-form-input">
+                        <span class="unit">м<sup>3</sup></span>
+                    </div>
+                </div>
+            </div>
+            <p class="form_title_name" style="margin-top: 20px;">Выберите вариант перевозки</p>
+            <div class="Transportation_option">
+                <div class="cargo-form-input" style="width: 104%">
+                    <p><select>
+                            <option selected=1 value="a">Экспресс 1-2 дня</option>
+                            <option value="b">Авиа 11-12 дней</option>
+                            <option value="c">Ж/Д 22-25 дней</option>
+                            <option value="d">Морем 45-55 дней</option>
+                        </select></p>
+                </div>
+                </div>
+            <p class="form_title_name" style="margin-top: 40px;">Цена доставки: 0$</p>
+            <div class="enter-name-input" style="margin-top: 10px;">
+                <input type="text" name="enter name" class="cargo-form-input" placeholder="Введите имя">
+                <input type="text" name="enter phone" class="cargo-form-input" placeholder="Введите номер телефона">
+            </div>
+            <button type="submit" class="cargo-submit-button">Отправить заявку</button>
+                <p class="under-button-text1">*Расчет стоимости носит ориентировочный характер. Для получения точного расчета заполните заявку и с вами свяжется наш менеджер</p>
+                <p class="under-button-text2">*Не является публичной офертой</p>
+        </form>
+    </div>
+</div>
+</body>

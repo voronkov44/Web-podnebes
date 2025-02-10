@@ -1,9 +1,93 @@
 footer {
+    display: flex;
+    align-items: flex-start;
     background-color: #2d2d2d;
     color: white;
     text-align: center;
-    padding: 100px;
+    padding: 20px 40px 10px 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    gap: 30px;
+}
+
+.footer-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    gap: 20px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.footer-text-left {
+    display: flex;
+    margin-right: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-text-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.messengers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.messengers img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-text-left p,
+.footer-text-right p {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.footer-text-left a,
+.footer-text-right a {
+    font-size: 19px;
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-images {
+        margin: 0;
+    }
+
+    .footer-text-left,
+    .footer-text-right {
+        align-items: center;
+    }
 }
