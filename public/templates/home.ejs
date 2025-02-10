@@ -3,21 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная - Поднебес</title>
-    <link rel="stylesheet" href="../styles/header.css">
+    <title>Оформление визы в Китай</title>
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/viza.css">
+
 </head>
 <body>
-<!-- Подключение хедера -->
-<%- include('header') %>
-
+<div class="General-center">
 <!-- Сама страница -->
 <main>
-    <h2>Добро пожаловать на сайт Поднебес!</h2>
-    <p>Мы рады видеть вас здесь.</p>
-    <!-- В будущем будем подключать сюда файлы как хедер и футер -->
+    <!-- Галерея с 6 фотографиями -->
+    <div class="photo-gallery">
+        <div class="info-home">
+            <!-- Блок с фотографиями -->
+            <div class="image-block">
+                <img src="../img/logo_2.png" alt="Фото 1" class="logo_2">
+                <img src="../img/company.png" alt="Фото 2" class="company">
+            </div>
+
+            <!-- Блок с иконками -->
+            <div class="icon-block">
+                <img src="../img/icon_tg.png" alt="Иконка 1">
+                <img src="../img/icon_whatssapp.png" alt="Иконка 2">
+                <img src="../img/icon_wechat.png" alt="Иконка 3">
+            </div>
+
+            <!-- Блок с номерами телефонов -->
+            <div class="phone-block">
+                <a href="tel:+79992065007" style="color: inherit">+7 (999) 206-50-07</a>
+                <a href="tel:+79242727399" style="color: inherit">+7 (924) 272-73-99</a>
+            </div>
+        </div>
+        <div class="visa-banner">
+            <img src="../img/airplane.png" alt="Фон" class="visa-banner-img">
+            <div class="visa-banner-content">
+                <h2 class="visa-title">Оформление визы <span>в Китай</span></h2>
+                <p class="visa-subtitle">Срочное оформление визы<br>в Китай любого типа!</p>
+                <button class="visa-urgentle-button">Срочное оформление</button>
+            </div>
+        </div>
+        <div class="photo-row">
+            <div class="photo-container">
+                <img src="../img/orangeRectangle.png" alt="Photo 1" class="gallery-img" style="top: -255%; left: 1%;">
+                <img src="../img/icon_home/1.png" alt="Icon 1" class="icon" style="top: -306%; left: -41%;"> <!-- Иконка для фото 1 -->
+                <div class="photo-text" style="top: -300%; left: -27px;">Аккредитованы<br>в консульстве</div>
+            </div>
+            <div class="photo-container">
+                <img src="../img/orangeRectangle.png" alt="Photo 2" class="gallery-img" style="top: -255%; left: 1%;">
+                <img src="../img/icon_home/2.png" alt="Icon 2" class="icon" style="top: -306%; left: -41%;"> <!-- Иконка для фото 2 -->
+                <div class="photo-text" style="top: -300%; left: -27px;">Оплата после<br>получения визы</div>
+            </div>
+            <div class="photo-container">
+                <img src="../img/orangeRectangle.png" alt="Photo 3" class="gallery-img" style="top: -255%; left: 1%;">
+                <img src="../img/icon_home/3.png" alt="Icon 3" class="icon" style="top: -306%; left: -41%;"> <!-- Иконка для фото 3 -->
+                <div class="photo-text" style="top: -300%; left: -27px;">Работаем 24/7<br>по всей стране</div>
+            </div>
+        </div>
+        <div class="photo-row">
+            <div class="photo-container">
+                <img src="../img/orangeRectangle.png" alt="Photo 4" class="gallery-img" style="top: -290%; left: 1%;">
+                <img src="../img/icon_home/4.png" alt="Icon 4" class="icon" style="top: -345%; left: -41%;"> <!-- Иконка для фото 4 -->
+                <div class="photo-text" style="top: -334%; left: -27px;">Полная подготовка<br>документов</div>
+            </div>
+            <div class="photo-container">
+                <img src="../img/orangeRectangle.png" alt="Photo 5" class="gallery-img" style="top: -290%; left: 1%;">
+                <img src="../img/icon_home/5.png" alt="Icon 5" class="icon" style="top: -345%; left: -41%;"> <!-- Иконка для фото 5 -->
+                <div class="photo-text" style="top: -334%; left: -27px;">Подача документов без<br>личного присутствия</div>
+            </div>
+            <div class="photo-container">
+                <img src="../img/orangeRectangle.png" alt="Photo 6" class="gallery-img" style="top: -290%; left: 1%;">
+                <img src="../img/icon_home/6.png" alt="Icon 6" class="icon" style="top: -345%; left: -41%;"> <!-- Иконка для фото 6 -->
+                <div class="photo-text" style="top: -334%; left: -27px;">Курьерская доставка<br>по всей России</div>
+            </div>
+        </div>
+        <!-- Блок акции -->
+        <div class="promo-section">
+            <div class="promo-container">
+                <div class="promo-image">
+                    <img src="../img/orangeRectangle.png" alt="Акция">
+                </div>
+                <div class="promo-content">
+                    <p class="promo-title">Акция</p>
+                    <p class="promo-subtitle"><span>Студенческая</span> учебная виза Х1, Х2 за <span>11 000</span> под ключ!</p>
+                    <p class="promo-description">
+                        В стоимость входит консультирование, подготовка документов, все сборы,<br>оформление визы! Срок выполнения - 3 рабочих дня!
+                    </p>
+                    <button class="promo-button">Заказать</button>
+                    <p class="promo-note">
+                        *Нажимая на кнопку, вы даете свое согласие <br>
+                        на обработку персональных данных
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок консультации -->
+        <div class="consultation-section">
+            <div class="consultation-container">
+                <div class="consultation-text">
+                    <p class="consultation-title">Получите <span class="highlight">бесплатную консультацию</span></p>
+                    <p class="consultation-subtitle">Наши специалисты помогут вам решить любой вопрос</p>
+                </div>
+                <button class="btn_cons">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+
 </main>
-<%- include('footer') %>
+    <!-- Подключение футера -->
+    <%- include('viza') %>
+    <!-- Подключение футера -->
+    <%- include('migration') %>
+</div>
 </body>
 </html>
