@@ -100,6 +100,21 @@ button:hover {
     height: 599px;
     align-items: flex-start;
     justify-content: flex-start;
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 570px;
+    height: 599px;
+    left: 220px;
+    top: 197px;*/
 }
 
 .document-list2 {
