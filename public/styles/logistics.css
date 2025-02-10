@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    position: relative;
+    padding-top: 2vh;
+    font-size: 2.25rem;
+}
+
+.center {
+    color: white;
+    background-color: black;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.road {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ширина контейнера */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url(../img/road.png) !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.line_1 {
+    background-image: url(../img/line1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 245px;
+    width: 120px;
+    margin-top: 67px;
+}
+
+.line_2 {
+    background-image: url(../img/line2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 268px;
+    width: 50px;
+    margin-top: 108px;
+}
+
+.line_3 {
+    background-image: url(../img/line3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 350px;
+    width: 23px;
+    margin-top: 217px;
+}
+
+.line_4 {
+    background-image: url(../img/line4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 440px;
+    width: 23px;
+    margin-top: 117px;
+}
+
+.line_5 {
+    background-image: url(../img/line5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 325px;
+    width: 23px;
+    margin-top: 204px;
+}
+
+.shape_1 {
+    position: relative; /* Абсолютное позиционирование */
+    top: -25px; /* Сдвиг вверх относительно линии */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Точное центрирование */
+    width: 280px; /* Ширина фигуры */
+    height: 50px; /* Высота фигуры */
+    color: white; /* Цвет текста */
+    border-radius: 25px; /* Скругленные углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px; /* Размер текста */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру */
+    background-color: rgb(45, 45, 45);
+}
+
+.shape_2 {
+    position: relative; /* Абсолютное позиционирование */
+    top: -25px; /* Сдвиг вверх относительно линии */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Точное центрирование */
+    width: 280px; /* Ширина фигуры */
+    height: 50px; /* Высота фигуры */
+    color: white; /* Цвет текста */
+    border-radius: 25px; /* Скругленные углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Размер текста */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру */
+    background-color: rgb(45, 45, 45);
+}
+
+.shape_3 {
+    position: relative; /* Абсолютное позиционирование */
+    top: -10px; /* Сдвиг вверх относительно линии */
+    left: 40%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Точное центрирование */
+    width: 220px; /* Ширина фигуры */
+    height: 75px; /* Высота фигуры */
+    color: white; /* Цвет текста */
+    border-radius: 25px; /* Скругленные углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Размер текста */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру */
+    background-color: rgb(45, 45, 45);
+}
+
+.shape_4 {
+    position: relative; /* Абсолютное позиционирование */
+    top: -18px; /* Сдвиг вверх относительно линии */
+    left: 45%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Точное центрирование */
+    width: 280px; /* Ширина фигуры */
+    height: 50px; /* Высота фигуры */
+    color: white; /* Цвет текста */
+    border-radius: 25px; /* Скругленные углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px; /* Размер текста */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру */
+    background-color: rgb(45, 45, 45);
+}
+
+.shape_5 {
+    position: relative; /* Абсолютное позиционирование */
+    top: -20px; /* Сдвиг вверх относительно линии */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Точное центрирование */
+    width: 380px; /* Ширина фигуры */
+    height: 70px; /* Высота фигуры */
+    color: white; /* Цвет текста */
+    border-radius: 25px; /* Скругленные углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Размер текста */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center; /* Выравнивание текста по центру */
+    background-color: rgb(45, 45, 45);
+}
+
+.lines {
+    position: relative;
+    gap: 200px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Выравнивание по левому краю */
+    align-items: center; /* Центрирование по вертикали */
+    margin-top: 20px; /* Отступ сверху */
+    padding-left: 20px; /* Отступ слева */
+}
+
+/* Стили для каждого элемента (train, ship, plane) */
+.icon-item {
+    position: relative; /* Для позиционирования текста */
+    text-align: center; /* Выравнивание текста по центру */
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    position: relative;
+    bottom: 83px; /* Отступ снизу, можно подкорректировать */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем текст по горизонтали */
+    color: white; /* Цвет текста */
+    padding: 5px 10px; /* Отступы */
+    font-size: 28px; /* Размер шрифта */
+    border-radius: 5px; /* Скругление углов */
+    margin-top: 8px; /* Добавляем отступ сверху, чтобы текст не прилипал к изображению */
+}
+
+.icon-item img{
+    width: 90%;
+    height: auto;
+}
+
+h2 {
+    position: relative;
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.cargo-form {
+    padding: 20px;             /* Внутренний отступ */
+    border-radius: 5px;        /* Скругленные углы */
+    margin-top: 10px;          /* Расстояние от h3 */
+    width: 100%;               /* Или установите нужную ширину */
+    max-width: 500px;
+    /* Максимальная ширина для адаптивности */
+}
+
+.cargo-form-input{
+    color: rgb(255, 255, 255);
+    background-color: rgb(45, 45, 45);
+    border-radius: 10px;
+    font-size: 16px;
+    height: 54px;
+    outline: none;
+}
+
+.cargo-form input[type="text"] {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding-left: 20px;
+}
+
+.cargo-form input[type="text"]::placeholder {
+    color: #999; /* Серый текст для placeholder */
+}
+
+.form_title_name,
+.form_title_weight,
+.form_title_volume{
+    font-weight: 600;
+    display: block;
+    color: rgb(229, 229, 229);
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+.cargo-weight-volume {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+.unit_group {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.unit {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-left: 8px;
+    color: white;
+    line-height: 31px;
+    font-size: 22px;
+}
+
+.cargo-form-input select {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    padding: 17px;
+    border: none;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 18px;
+    height: 57px;
+    cursor: pointer;
+    /* Отключаем стандартную стрелочку */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Добавляем свою стрелочку */
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* 10px от правого края, центр по вертикали */
+    background-size: 13px;
+    outline: none;
+}
+
+.enter-name-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cargo-submit-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(255, 88, 29);
+    width: 50%;
+    height: 54px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+}
+.cargo-submit-button:hover {
+    background-color: rgb(255,128,69);
+    outline: none;
+}
+.under-button-text1,
+.under-button-text2{
+    font-weight: 500;
+    margin-top: 20px;
+    color: #E5E5E5;
+    font-size: 16px;
+    width: 748px;
+    height: auto;
+}
+
