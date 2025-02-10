@@ -111,6 +111,7 @@ body {
 }
 
 /* Заголовок */
+
 .oformlenie {
     font-size: 2.7rem; /* Увеличен размер заголовка */
     font-weight: bolder;
@@ -118,6 +119,7 @@ body {
     left: -0.1%;
 
 }
+
 
 .oformlenie span {
     color: #e54e2e;
@@ -396,3 +398,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
