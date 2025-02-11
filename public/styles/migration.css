@@ -100,11 +100,16 @@ h1{
     font-size: 30px;
 }
 
+.order-visa-text {
+    margin-top: 45px;
+}
+
 .order-visa-text1,
 .order-visa-text2 {
     font-size: 20px;
     line-height: 26px;
     color: #e5e5e5;
+
 }
 
 .title {
