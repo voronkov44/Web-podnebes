@@ -151,6 +151,11 @@ body {
     align-self: flex-start;
 }
 
+.visa-urgentle-button:hover {
+    background-color: white;
+    color: #FF5722;
+}
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     .visa-banner-content {
@@ -303,6 +308,7 @@ body {
     cursor: pointer;
     transition: 0.3s ease;
     margin-bottom: 30px;
+    border: none;
 }
 
 .promo-button:hover {
@@ -355,14 +361,15 @@ body {
 
 
 .btn_cons {
+    font-family: "Montserrat", sans-serif;
     margin-top: -1px;
     padding: 25px 35px;
     background-color: #FF5722;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 500;
     border-radius: 12px;
     margin-left: 30px;
     transition: 0.3s ease;
@@ -370,7 +377,8 @@ body {
 }
 
 .btn_cons:hover {
-    background-color: #E64A19;
+    background-color: white;
+    color: #FF5722;
 }
 
 

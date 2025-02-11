@@ -20,7 +20,7 @@ body {
 
 .Visa-v-Kitay {
     font-size: 2rem;
-    color: #e54e2e; /* Оранжевый цвет */
+    color: #ff581d; /* Оранжевый цвет */
     margin: 45px;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .visa-heading span {
-    color: #e54e2e; /* Оранжевый цвет */
+    color: #ff581d; /* Оранжевый цвет */
 }
 
 .type_visa-container {
@@ -229,7 +229,7 @@ body {
     left: 30%;
     transform: translateX(-50%);
     width: 75%;
-    background-color: #e54e2e;
+    background-color: #ff581d;
     color: #fff;
     padding: 17px;
     border: none;
@@ -237,8 +237,13 @@ body {
     cursor: pointer;
     text-align: center;
     font-size: 16px;
+    transition: 0.3s ease;
 }
 
+.visa-button:hover {
+    background-color: white;
+    color: #ff581d;
+}
 /* Текст скидки */
 .discount-text {
     position: absolute;
@@ -282,7 +287,7 @@ body {
 }
 
 .visa-process span {
-    color: #e54e2e;
+    color: rgb(255, 88, 29);
 }
 
 .visa-process-title {
@@ -318,14 +323,14 @@ body {
     display: flex;
     justify-content: center;
     gap: 100px;
-
+    margin-top: -20px;
 }
 
 /* Заголовок шага */
 .step-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #e54e2e;
+    color: #ff581d;
 }
 
 /* Описание шага */
@@ -336,7 +341,9 @@ body {
 
 /* Примечание внизу */
 .visa-process-note {
-    font-size: 0.9rem;
-    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
     color: #e5e5e5;
 }

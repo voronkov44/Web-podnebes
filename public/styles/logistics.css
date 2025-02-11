@@ -241,7 +241,7 @@ h2 {
     border-radius: 5px;        /* Скругленные углы */
     margin-top: 10px;          /* Расстояние от h3 */
     width: 100%;               /* Или установите нужную ширину */
-    max-width: 500px;
+    max-width: 600px;
     /* Максимальная ширина для адаптивности */
 }
 
@@ -335,9 +335,9 @@ h2 {
 
 .cargo-submit-button {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: white;
-    background-color: rgb(255, 88, 29);
+    background-color: #ff581d;
     width: 50%;
     height: 54px;
     border-radius: 10px;
@@ -346,9 +346,12 @@ h2 {
     display: block;
     cursor: pointer;
     outline: none;
+    border: none;
 }
 .cargo-submit-button:hover {
-    background-color: rgb(255,128,69);
+    background-color: white;
+    color: #ff581d;
+    font-weight: bold;
     outline: none;
 }
 .under-button-text1,
