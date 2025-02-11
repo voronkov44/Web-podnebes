@@ -136,13 +136,13 @@ body {
 
 /* Контейнер для всех карточек */
 .visa-price-heading {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 700;
     color: #fff;
-    margin: 70px 0;
+    margin: 20px 0;
 }
 .visa-price-heading span {
-    color: #e54e2e;
+    color: #ff581d;
 }
 
 .visa-price-container {
@@ -150,21 +150,10 @@ body {
     flex-wrap: wrap; /* Элементы будут переноситься, если не помещаются */
     justify-content: center;
     gap: 40px;
-    padding: 20px;
-
-}
-
-/* Стили для самой карточки (убрали формочку, оставили фото) */
-.type-visa-container {
-    position: relative;
-    width: 40%; /* Размер карточки */
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .type-visa-card {
     position: relative; /* Включаем позиционирование */
-    width: 50%; /* Размер карточки */
     max-width: 350px; /* Ограничиваем максимальную ширину */
     border-radius: 10px;
     overflow: hidden;
@@ -193,17 +182,19 @@ body {
 
 /* Заголовок */
 .visa-title {
+    font-weight: 600;
     top: 10%;
-    font-size: 1.5rem;
-    color: #e54e2e;
+    font-size: 22px;
+    color: #ff581d;
 }
 
 /* Цена */
 .visa-price {
     top: 17%;
-    font-size: 1.3rem;
+    font-size: 21px;
     margin-top: 15px;
     margin-bottom: 18px;
+    font-weight: 500;
 }
 
 /* Информация */
@@ -212,7 +203,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 1.1rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* Иконка + текст */
@@ -230,14 +222,15 @@ body {
 
 /* Кнопка */
 .visa-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     position: absolute;
     bottom: -65%; /* Размещаем кнопку ближе к нижней части */
-    left: 27%;
+    left: 30%;
     transform: translateX(-50%);
-    width: 55%;
+    width: 75%;
     background-color: #e54e2e;
     color: #fff;
-    font-weight: bold;
     padding: 17px;
     border: none;
     border-radius: 10px;
@@ -248,18 +241,20 @@ body {
 /* Текст скидки */
 .discount-text {
     position: absolute;
-    bottom: -95%; /* Ставим текст еще ниже кнопки */
-    left: 45%;
+    bottom: -88%; /* Ставим текст еще ниже кнопки */
+    left: 48%;
     transform: translateX(-50%);
-    font-size: 0.8rem;
+    font-size: 14px;
     text-align: left;
-    width: 90%;
+    font-weight: 400;
+    width: 110%;
+    color: #e5e5e5;
 }
 
 /* Кнопка для 3 столбца карточки чтобы подравнять*/
 .visa-button3 {
     position: absolute;
-    bottom: -115%; /* Размещаем кнопку ближе к нижней части */
+    bottom: -65%; /* Размещаем кнопку ближе к нижней части */
     left: 27%;
     transform: translateX(-50%);
     width: 55%;
