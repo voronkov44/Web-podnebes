@@ -157,7 +157,7 @@ body {
         width: 95%;
     }
 
-    .oformlenie {
+    .registration-visa {
         font-size: 2rem;
     }
 
@@ -228,8 +228,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px 20px;
-    margin-top: -450px; /* Отступ сверху */
-    margin-bottom: 20px; /* Отступ снизу */
+    margin-top: -530px; /* Отступ сверху */
+    margin-bottom: -50px; /* Отступ снизу */
     z-index: 2;
 }
 
