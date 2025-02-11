@@ -21,16 +21,17 @@
 <nav id="sidebar" class="sidebar">
     <button id="closeBtn" class="close-button">✖</button>
     <ul>
-        <li><a href="/">Главная</a></li>
-        <li><a href="/migration">Визы в Китай</a></li>
-        <li><a href="/services">Миграционные услуги</a></li>
-        <li><a href="/contact">Логистика</a></li>
-        <li><a href="/contact">Контакты</a></li>
+        <li><a href="#home-section" data-section="home">Главная</a></li>
+        <li><a href="#viza-section" data-section="viza">Визы в Китай</a></li>
+        <li><a href="#migration-section" data-section="migration">Миграционные услуги</a></li>
+        <li><a href="#logistics-section" data-section="logistics">Логистика</a></li>
+        <li><a href="#contact-section" data-section="contact">Контакты</a></li>
     </ul>
 </nav>
 
 <script src="../javascript/script.js"></script>
 
+<div id="home-section">
 <div class="General-center">
     <!-- Галерея с 6 фотографиями -->
     <div class="photo-gallery">
@@ -133,14 +134,22 @@
             </div>
         </div>
     </div>
-    <!-- Подключение визы -->
-    <%- include('viza') %>
-    <!-- Подключение миграции -->
-    <%- include('migration') %>
-    <!-- Подключение логистики -->
-    <%- include('logistics') %>
-    <!-- Подключение футера -->
-    <%- include('footer') %>
+</div>
+    <div id="viza-section" style="display: none;">
+        <%- include('viza') %>
+    </div>
+
+    <div id="migration-section" style="display: none;">
+        <%- include('migration') %>
+    </div>
+
+    <div id="logistics-section" style="display: none;">
+        <%- include('logistics') %>
+    </div>
+
+    <div id="contact-section" style="display: none;">
+        <%- include('footer') %>
+    </div>
 </div>
 </body>
 </html>
