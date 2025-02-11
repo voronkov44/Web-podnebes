@@ -260,14 +260,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 90%;
+    width: 120%;
 }
 
 /* Заголовок */
 .promo-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #e54e2e;
+    color: #de4f1f;
     margin-bottom: 10px;
 }
 
@@ -280,23 +280,25 @@ body {
 }
 
 .promo-subtitle span {
-    color: #e54e2e;
+    color: #de4f1f;
 }
 
 /* Описание */
 .promo-description {
-    font-size: 1.1rem;
-    color: white;
+    font-size: 22px;
+    color: #e5e5e5;
     margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 /* Кнопка */
 .promo-button {
-    padding: 15px 30px;
+    padding: 15px 60px;
     background-color: white;
     color: #e54e2e;
-    border-radius: 25px;
-    font-size: 1.2rem;
+    border-radius: 15px;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
@@ -310,8 +312,9 @@ body {
 
 /* Маленький текст */
 .promo-note {
-    font-size: 0.9rem;
-    color: white;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
 }
 
 /* Блок консультации */

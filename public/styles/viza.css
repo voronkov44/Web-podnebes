@@ -236,6 +236,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
+    font-size: 16px;
 }
 
 /* Текст скидки */
@@ -249,23 +250,6 @@ body {
     font-weight: 400;
     width: 110%;
     color: #e5e5e5;
-}
-
-/* Кнопка для 3 столбца карточки чтобы подравнять*/
-.visa-button3 {
-    position: absolute;
-    bottom: -65%; /* Размещаем кнопку ближе к нижней части */
-    left: 27%;
-    transform: translateX(-50%);
-    width: 55%;
-    background-color: #e54e2e;
-    color: #fff;
-    font-weight: bold;
-    padding: 17px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
 }
 
 /* Текст скидки для 3 столбца для выравнивания*/
