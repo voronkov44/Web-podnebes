@@ -347,11 +347,11 @@ h2 {
     cursor: pointer;
     outline: none;
     border: none;
+    transition: all 0.3s ease-in-out;
 }
 .cargo-submit-button:hover {
     background-color: white;
     color: #ff581d;
-    font-weight: bold;
     outline: none;
 }
 .under-button-text1,
