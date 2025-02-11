@@ -122,28 +122,29 @@ body {
 
 
 .registration-visa span {
-    color: #e54e2e;
+    color: rgb(255, 88, 29);
 }
 
 /* Подзаголовок */
 .visa-subtitle {
     color: white;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-top: 10px;
-    font-weight: normal;
     display: block;
     line-height: 1.2;
 }
 
 /* Кнопка */
 .visa-urgentle-button {
+    font-family: "Montserrat", sans-serif;
     padding: 25px 35px;
     background-color: #FF5722;
-    color: white;
+    color: #e5e5e5;
     border: none;
     cursor: pointer;
     font-size: 1.7rem;
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 12px;
     margin-top: 30px;
     transition: 0.3s ease;

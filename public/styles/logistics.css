@@ -229,7 +229,8 @@ h1{
 
 h2 {
     position: relative;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 30px;
     padding: 20px;
     font-weight: 700;
 }
@@ -271,7 +272,7 @@ h2 {
 .form_title_weight,
 .form_title_volume{
     font-weight: 600;
-    display: block;
+    display: flex;
     color: rgb(229, 229, 229);
     padding-bottom: 5px;
     font-size: 22px;
@@ -357,5 +358,5 @@ h2 {
     font-size: 16px;
     width: 748px;
     height: auto;
+    text-align: left;
 }
-
