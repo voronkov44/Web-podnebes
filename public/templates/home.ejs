@@ -67,9 +67,28 @@
                 <h2 class="registration-visa">Оформление визы <span>в Китай</span></h2>
 
                 <p class="visa-subtitle">Срочное оформление визы<br>в Китай любого типа!</p>
-                <button class="visa-urgentle-button">Срочное оформление</button>
+                <button id="openPopup" class="visa-urgentle-button">Срочное оформление</button>
             </div>
         </div>
+        <!-- Форма для заполнения -->
+        <div id="popup" class="popup">
+            <span id="closePopup" class="close">&times;</span>
+            <div class="popup-content">
+                <h2>Заказать визу</h2>
+                <form id="visaForm">
+                    <label for="name">Имя Фамилия</label>
+                    <input type="text" id="name" name="name" placeholder="Введите имя и фамилию" required>
+
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+
+                    <button class="button-nameAndTel" type="submit">Отправить</button>
+
+                    <p class="consent-text">*Нажимая на кнопку, вы даете свое согласие на обработку персональных данных</p>
+                </form>
+            </div>
+        </div>
+
         <div class="photo-row">
             <div class="photo-container">
                 <img src="../img/orangeRectangle.png" alt="Photo 1" class="gallery-img" style="top: -255%; left: 1%;">
