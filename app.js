@@ -35,6 +35,15 @@ app.get("/migration", (req, res) => {
     res.render("migration");
 });
 
+app.get("/list-business-visa", (req, res) => {
+    res.render("list-business-visa");
+});
+
+app.get("/list-tourist-visa", (req, res) => {
+    res.render("list-tourist-visa");
+});
+
+
 // Обработка 404 ошибки
 app.use((req, res) => {
     res.status(404).send("404: Страница не найдена");
