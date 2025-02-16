@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+h1 span {
+    color: rgb(255, 88, 29);
+}
+
+.center {
+    color: white;
+    background-color: black;
+    padding-left: calc(56% - 600px);
+    padding-right: calc(56% - 600px);
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 180px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 588px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-wrapper-3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 224px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-wrapper-4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 930px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-wrapper-5 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 498px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-wrapper-6 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 615px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-wrapper-7 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 746px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-wrapper-8 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 1000px;
+    height: 373px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-title-left {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #ff581d;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.work-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 15px;
+}
+
+.education-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 85px;
+    outline: none;
+    padding: 15px;
+}
+
+.family-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 85px;
+    outline: none;
+    padding: 15px;
+}
+
+.phone-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 15px;
+}
+
+.family-input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.emergence-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 15px;
+}
+
+.emergence-input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.invite-data-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 15px;
+}
+
+.travel-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 15px;
+}
+
+.contact-input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(229,229,229);
+    background-color: rgb(5,5,5);
+    border: 2px solid rgb(255,88,29);
+    border-radius: 9px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 15px;
+}
+
+.contact-input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.form-subtitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+}
+
+.form-subtitle-2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-subtitle-3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-subtitle-4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-subtitle-5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-subtitle-6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-subtitle-7 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-subtitle-8 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229, 229, 229);
+    font-weight: 600;
+    text-align: left;
+}
+
+.form-subtitle-7 span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgb(255, 88, 29);
+}
+
+.family-mini-subtitle span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgb(255, 88, 29);
+}
+
+.family-mini-subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(229,229,229);
+    font-weight: 400;
+    text-align: left;
+}
+
+.radio-form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Скрываем стандартные радио-кнопки */
+.radio-form input[type="radio"] {
+    display: none;
+}
+
+/* Оформление каждого пункта */
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* расстояние между пунктами */
+}
+
+/* Оформление метки, которая будет содержать кастомную радио-кнопку */
+.radio-form label {
+    position: relative;
+    color: rgb(229, 229, 229);
+    padding-left: 35px;  /* Отступ для размещения кастомного кружка */
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+/* Кастомная радио-кнопка – внешний круг */
+.radio-form label::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff581d; /* Обводка нужного цвета */
+    border-radius: 50%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+/* При выборе радио-кнопки – внутренний кружок */
+.radio-form input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 6px;  /* смещаем внутрь, чтобы осталась обводка */
+    top: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff581d; /* Заполнение тем же цветом */
+}
+
+.footer-area {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.footer-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgb(229,229,229);
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(255, 88, 29);
+    border-radius: 4px;
+    background-color: rgb(5, 5, 5);
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.5; /* Делаем тусклым */
+    filter: brightness(80%); /* Затемняем */
+    transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+/* При нажатии внутри чекбокса появляется галочка */
+.custom-checkbox:checked::after {
+    content: "✔";
+    font-size: 16px;
+    color: rgb(255, 88, 29);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox:checked {
+    opacity: 1; /* Полная яркость */
+    filter: brightness(100%);
+}
+
+.send-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    width: 280px;
+    padding: 12px;
+    background-color: #ff581d;
+    color: #e5e5e5;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 9px;
+    border-color: #ff581d;
+    border-width: 2px;
+    background-position: center center;
+    text-align: center;
+    position: relative; /* Позволяет центрировать */
+    transition: all 0.2s ease-in-out;
+    line-height: 1.55;
+}
+
+.send-button:hover {
+    background-color: #050505;
+}
+
+.return-button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #e5e5e5;
+    background-color: #050505;
+    border-color: #ff581d;
+    border-style: solid;
+    border-radius: 9px;
+    border-width: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.return-button:hover {
+    background-color: #ff581d;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
