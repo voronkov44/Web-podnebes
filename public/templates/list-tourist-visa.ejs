@@ -10,10 +10,154 @@
     <link rel="stylesheet" href="../styles/migration.css">
     <link rel="stylesheet" href="../styles/viza.css">
     <link rel="stylesheet" href="../styles/list-business-visa.css">
-    <link rel="stylesheet href='../styles/list-tourist-visa.css'>">
+    <link rel="stylesheet" href="../styles/list-tourist-visa.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="General center">
+    <h1>Опросный лист на <span>туристическую визу</span></h1>
+    <p class="form-title-left">1. Выберите тип визы</p>
+    <div class="form-wrapper">
+        <p class="form-subtitle" style="margin-top: -10px">Выберите нужный вариант</p>
+        <form class="radio-form">
+            <div class="radio-item">
+                <input type="radio" id="button1" name="visaType" value="single">
+                <label for="button1">
+                    однократная - срок действия 3 месяца, количество дней пребывания за поездку 30 дней
+                </label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="button2" name="visaType" value="double">
+                <label for="button2">
+                    двукратная - срок действия 3 месяцев, количество дней пребывания за поездку 30 дней
+                </label>
+            </div>
+        </form>
+    </div>
+    <p class="form-title-left">2. Место работы</p>
+    <div class="form-wrapper-2">
+        <p class="form-subtitle-2" style="margin-top: -10px;">Название компании:</p>
+        <input type="text" class="work-input">
+        <p class="form-subtitle-2">Адрес компании:</p>
+        <input type="text" class="work-input">
+        <p class="form-subtitle-2">Должность и рабочий телефон:</p>
+        <input type="text" class="work-input">
+        <p class="form-subtitle-2">Дата начала работы в компании (число, месяц, год):</p>
+        <input type="text" class="work-input">
+        <p class="form-subtitle-2">ФИО начальника (полностью) и телефон:</p>
+        <input type="text" class="work-input">
+    </div>
+    <p class="form-title-left">3. Образование:</p>
+    <div class="form-wrapper-3">
+        <p class="form-subtitle-3" style="margin-top: -10px;">Полное название последнего места учебы (школа/колледж/университет, город, ученая степень):</p>
+        <textarea class="education-input"></textarea>
+    </div>
+    <p class="form-title-left">4. Родственники:</p>
+    <div class="form-wrapper-4">
+        <p class="form-subtitle-4" style="margin-top: -10px">Мама:</p>
+        <textarea class="family-input" placeholder="ФИО, дата рождения, город рождения"></textarea>
+        <p class="form-subtitle-4">Отец:</p>
+        <textarea class="family-input" placeholder="ФИО, дата рождения, город рождения"></textarea>
+        <p class="family-mini-subtitle">Оба родителя <span>ОБЯЗАТЕЛЬНЫ</span> к заполнению! <span>При гибели указать дату смерти полностью!</span></p>
+        <p class="form-subtitle-4" style="margin-top: 15px">Жена или Муж:</p>
+        <textarea class="family-input" placeholder="ФИО, дата рождения, город рождения"></textarea>
+        <p class="form-subtitle-4">Дети:</p>
+        <textarea class="family-input" placeholder="ФИО, дата рождения, город рождения"></textarea>
+        <p class="form-subtitle-4">Личный мобильный телефон:</p>
+        <input type="tel" id="phone" class="phone-input">
+        <p class="form-subtitle-4">Подробный домашний адрес:</p>
+        <textarea class="family-input"></textarea>
+    </div>
+    <p class="form-title-left">5. Контактное лицо при чрезвычайном случае:</p>
+    <div class="form-wrapper-5">
+        <p class="form-subtitle-5" style="margin-top: -10px">ФИО:</p>
+        <input type="text" class="emergence-input">
+        <p class="form-subtitle-5">Мобильный телефон:</p>
+        <input type="tel" id="phone" class="phone-input">
+        <p class="form-subtitle-5">Почта:</p>
+        <input type="text" class="emergence-input" placeholder="email">
+        <p class="form-subtitle-5">Отношение к заявителю:</p>
+        <input type="text" class="emergence-input">
+    </div>
+
+    <p class="form-title-left">6. Поездки</p>
+    <div class="form-wrapper-7">
+        <p class="form-subtitle-7" style="margin-top: -10px">Перечислите страны, посещенные за 12 месяцев:</p>
+        <input type="text" class="travel-input">
+        <p class="form-subtitle-7">Есть ли действующие визы? Если да, то перечислите страны:</p>
+        <input type="text" class="travel-input">
+        <p class="form-subtitle-7">Были ли вы когда-нибудь больше месяца <span>ЗА ОДНУ ПОЕЗДКУ</span> в Турции или Афганистане?</p>
+        <form class="radio-form">
+            <div class="radio-item">
+                <input type="radio" id="buttonYES1" name="visaType" value="single">
+                <label for="buttonYES1">
+                    Да
+                </label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="buttonNO1" name="visaType" value="single">
+                <label for="buttonNO1">
+                    Нет
+                </label>
+            </div>
+        </form>
+        <p class="form-subtitle-7">Были ли Вы в Китае?</p>
+        <form class="radio-form">
+            <div class="radio-item">
+                <input type="radio" id="buttonYES2" name="visaType" value="single">
+                <label for="buttonYES2">
+                    Да
+                </label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="buttonNO2" name="visaType" value="single">
+                <label for="buttonNO2">
+                    Нет
+                </label>
+            </div>
+        </form>
+        <p class="form-subtitle-7">Если да, брали ли у Вас отпечатки?</p>
+        <form class="radio-form">
+            <div class="radio-item">
+                <input type="radio" id="buttonYES3" name="visaType" value="single">
+                <label for="buttonYES3">
+                    Да
+                </label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="buttonNO3" name="visaType" value="single">
+                <label for="buttonNO3">
+                    Нет
+                </label>
+            </div>
+        </form>
+        <p class="form-subtitle-7">Укажите точную дату и город где у Вас брали отпечатки:</p>
+        <input type="text" class="travel-input">
+    </div>
+    <p class="form-title-left">7. Контактные данные</p>
+    <div class="form-wrapper-8">
+        <p class="form-subtitle-8" style="margin-top: -10px">Ваше имя:</p>
+        <input type="text" class="contact-input">
+        <p class="form-subtitle-8">Ваш телефон:</p>
+        <input type="text" class="contact-input">
+        <p class="form-subtitle-8">Ваша почта:</p>
+        <input type="text" class="contact-input" placeholder="email">
+    </div>
+    <div class="footer-area">
+        <input type="checkbox" id="consent-checkbox" class="custom-checkbox">
+        <label for="consent-checkbox" class="footer-text">
+            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <span><u>политикой конфиденциальности</u></span>
+        </label>
+    </div>
+    <div class="footer-buttons">
+        <div class="footer-button-send">
+            <button class="send-button">ОТПРАВИТЬ</button>
+        </div>
+        <div class="footer-button-return">
+            <button class="return-button">Вернуться на главную</button>
+        </div>
+    </div>
+</div>
 </body>
