@@ -447,6 +447,10 @@ h1 span {
     text-align: left;
 }
 
+.footer-text span {
+    color: #ff8562;
+}
+
 .custom-checkbox {
     width: 20px;
     height: 20px;
