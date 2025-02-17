@@ -88,3 +88,20 @@ input {
 body.locked {
     overflow: hidden;
 }
+
+/* Стили для сообщений об успешной и неуспешной отправке */
+.success-message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message.success {
+    color: green;
+}
+
+.success-message.error {
+    color: red;
+}
+
