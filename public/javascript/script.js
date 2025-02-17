@@ -59,13 +59,4 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.classList.remove('locked'); // Разблокируем прокрутку
         }
     });
-
-    // Форма отправки (пока просто вывод в консоль)
-    document.getElementById("visaForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-        console.log("Имя:", document.getElementById("name").value);
-        console.log("Телефон:", document.getElementById("phone").value);
-        popup.style.display = "none"; // Закрываем окно после отправки
-        document.body.classList.remove('locked'); // Разблокируем прокрутку
-    });
 });
