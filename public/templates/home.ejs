@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/logistics.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/popup.css">
+    <link rel="stylesheet" href="../styles/statusPopup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -33,6 +34,7 @@
 </nav>
 
 <script src="../javascript/script.js"></script>
+<script src="../javascript/submissionStatus.js"></script>
 
 <div id="home-section">
 <div class="General-center">
@@ -154,7 +156,8 @@
         <%- include('footer') %>
     </div>
 </div>
-
+    <!-- Подключаем popups -->
+    <%- include('statusPopup') %>
     <!-- Подключаем popup.ejs -->
     <%- include('popup') %>
 </body>

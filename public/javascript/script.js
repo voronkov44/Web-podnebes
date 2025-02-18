@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Добавляем обработчик на все кнопки "Заказать"
     openPopupButtons.forEach(button => {
         button.addEventListener("click", function () {
-            console.log("Кнопка 'Заказать' нажата!", this); // Проверка, какая кнопка сработала
             popup.style.display = "flex"; // Показываем форму
             document.body.classList.add("locked"); // Блокируем прокрутку страницы
         });

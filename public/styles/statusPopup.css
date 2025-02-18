@@ -1,0 +1,54 @@
+/* Фон попапа */
+.status-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Затемненный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+/* Контейнер с изображением и текстом */
+.status-content {
+    position: relative; /* Чтобы крестик был в правом верхнем углу этого контейнера */
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Фото */
+.status-content img {
+    width: 75px; /* Размер фото */
+    height: 75px;
+    margin-bottom: 16px;
+}
+
+/* Текст */
+#statusText {
+    font-size: 18px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Крестик */
+.close-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 20px;
+    color: orange;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+/* При наведении на крестик */
+.close-btn:hover {
+    color: darkorange;
+}

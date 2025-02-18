@@ -143,3 +143,11 @@ body.locked {
 .fade-out {
     animation: fadeOut 0.5s forwards;
 }
+
+/* Для ошибок в форме */
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}

@@ -1,49 +1,49 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("visaForm");
+    const popup = document.getElementById("popup");
+    const formMessage = document.getElementById("formMessage");
 
     if (form) {
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Отменяем стандартное поведение формы
-            console.log('Форма отправлена');
+            event.preventDefault();
 
             const name = document.getElementById("name").value.trim();
             const phone = document.getElementById("phone").value.trim();
 
-            const messageContainer = document.getElementById("formMessage");
+            let errorMessage = "";
+            let valid = true;
 
-            // Очищаем предыдущие сообщения
-            messageContainer.innerHTML = '';
-
-            if (name && phone) {
-                console.log("Имя, фамилия:", name);
-                console.log("Телефон:", phone);
-
-                // Выводим сообщение об успешной отправке
-                const successMessage = document.createElement("p");
-                successMessage.classList.add("success-message", "success");
-                successMessage.textContent = "Данные успешно отправлены!";
-
-                messageContainer.appendChild(successMessage);
-
-                // Очищаем форму после отправки
-                form.reset();
-
-                // Закрываем попап через 2 секунды
-                setTimeout(() => {
-                    document.getElementById("popup").classList.add("fade-out");
-                    setTimeout(() => {
-                        document.getElementById("popup").style.display = "none";
-                        document.body.classList.remove('locked');
-                    }, 500); // Ждём анимацию исчезновения
-                }, 2000);
-            } else {
-                console.warn("Заполните все поля!");
-
-                const errorMessage = document.createElement("p");
-                errorMessage.classList.add("success-message", "error");
-                errorMessage.textContent = "Пожалуйста, заполните все поля!";
-                messageContainer.appendChild(errorMessage);
+            // Проверка на длину имени
+            if (name.length > 100) {
+                errorMessage += "Имя и Фамилия не может быть длиннее 100 символов.<br>";
+                document.getElementById("name").value = ""; // Очистить поле имени
+                valid = false;
             }
+
+            // Проверка на корректность телефона (разрешены цифры, +, (, ), -)
+            const phoneRegex = /^[\d\+\(\)\-\s]+$/;
+            if (!phoneRegex.test(phone)) {
+                errorMessage += "Номер телефона должен содержать только цифры и символы";
+                document.getElementById("phone").value = ""; // Очистить поле телефона
+                valid = false;
+            }
+
+            // Если есть ошибки, показываем их и не отправляем форму
+            if (!valid) {
+                formMessage.innerHTML = errorMessage;
+                formMessage.style.color = "red"; // Красный текст для ошибок
+                showStatusPopup(false); // Показываем ошибку
+                return;
+            }
+
+            // Если ошибок нет, отправляем данные
+            console.log(`Отправленные данные:\nИмя: ${name}\nТелефон: ${phone}`);
+
+            form.reset();
+            popup.style.display = "none";
+            document.body.classList.remove('locked');
+
+            showStatusPopup(true); // Успех
         });
     }
 });

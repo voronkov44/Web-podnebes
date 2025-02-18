@@ -1,9 +1,9 @@
-<!-- popup.html -->
+<!-- popup.ejs -->
 <div id="popup" class="popup">
     <span id="closePopup" class="close">&times;</span>
     <div class="popup-content">
         <h2 class="popup-h2">Заказать визу</h2>
-        <form id="visaForm">
+        <form id="visaForm" method="POST">
             <label for="name">Имя Фамилия</label>
             <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
 
@@ -14,10 +14,10 @@
             <div class="consent-text">
                 <a class="a-consent">*Нажимая на кнопку, вы даете свое согласие на <u><a class="a-policy" href="/policy">обработку персональных данных</a></u></a>
             </div>
-            <!-- Контейнер для сообщений -->
-            <div id="formMessage"></div>
+            <div id="formMessage"></div> <!-- Блок для сообщений об ошибках -->
         </form>
     </div>
 </div>
+
 
 <script src="../javascript/formHandlerNameAndTel.js"></script>
