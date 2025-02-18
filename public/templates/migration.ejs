@@ -53,7 +53,12 @@
                     <li>Загранпаспорт <br>(скан лицевой страницы)</li>
                     <li>Справка с работы</li>
                     <li>Заполненный опросный лист <br>(заполнить по кнопке ниже)</li>
-                    <button class="document-button" type="submit">Заполнить опросный лист</button>
+                    <button class="document-button" onclick="openBusinessVisaForm()">Заполнить опросный лист</button>
+                    <script>
+                        function openBusinessVisaForm() {
+                            window.location.href = 'list-business-visa'; // Переход на страницу
+                        }
+                    </script>
                 </ul>
             </div>
             <div class="document-list2">
@@ -63,7 +68,12 @@
                     <li>Скан внутреннего паспорта <br>всех страниц, где стоят отметки</li>
                     <li>Загранпаспорт (скан лицевой страницы)</li>
                     <li>Заполненный опросный лист <br>(заполнить по кнопке ниже)</li>
-                    <button class="document-button" type="submit">Заполнить опросный лист</button>
+                    <button class="document-button" onclick="openTouristVisaForm()">Заполнить опросный лист</button>
+                    <script>
+                        function openTouristVisaForm() {
+                            window.location.href = 'list-tourist-visa'; // Переход на страницу
+                        }
+                    </script>
                 </ul>
             </div>
         </div>
