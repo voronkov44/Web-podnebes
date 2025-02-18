@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("script.js загружен!"); // Проверка
     const menuBtn = document.getElementById("menuBtn");
     const closeBtn = document.getElementById("closeBtn");
     const sidebar = document.getElementById("sidebar");
     const darkHome = document.getElementById("darkHome");
     const menuLinks = document.querySelectorAll("#sidebar a");
-    const openPopupBtn = document.getElementById("openPopup");
+    const openPopupButtons = document.querySelectorAll("#openPopup");
     const closePopupBtn = document.getElementById("closePopup");
     const popup = document.getElementById("popup");
 
@@ -40,23 +41,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Открытие формы
-    openPopupBtn.addEventListener("click", function () {
-        popup.style.display = "flex"; // Показываем форму
-        document.body.classList.add('locked'); // Блокируем прокрутку страницы
+
+    // Добавляем обработчик на все кнопки "Заказать"
+    openPopupButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            console.log("Кнопка 'Заказать' нажата!", this); // Проверка, какая кнопка сработала
+            popup.style.display = "flex"; // Показываем форму
+            document.body.classList.add("locked"); // Блокируем прокрутку страницы
+        });
     });
 
     // Закрытие формы
     closePopupBtn.addEventListener("click", function () {
         popup.style.display = "none"; // Скрываем форму
-        document.body.classList.remove('locked'); // Разблокируем прокрутку
+        document.body.classList.remove("locked"); // Разблокируем прокрутку
     });
 
-    // Закрытие формы при клике вне формы
-    window.addEventListener("click", function (event) {
+    // Закрытие при клике вне формы
+    popup.addEventListener("click", function (event) {
         if (event.target === popup) {
-            popup.style.display = "none"; // Скрываем форму
-            document.body.classList.remove('locked'); // Разблокируем прокрутку
+            popup.style.display = "none";
+            document.body.classList.remove("locked");
         }
     });
 });
