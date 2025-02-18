@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.getElementById("sidebar");
     const darkHome = document.getElementById("darkHome");
     const menuLinks = document.querySelectorAll("#sidebar a");
+    const openPopupBtn = document.getElementById("openPopup");
+    const closePopupBtn = document.getElementById("closePopup");
+    const popup = document.getElementById("popup");
 
     menuBtn.addEventListener("click", function () {
         sidebar.style.right = "0"; // Открываем меню
@@ -35,5 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
             sidebar.style.right = "-260px"; // Закрываем меню после клика
             darkHome.style.display = "none"; // Убираем затемнение
         });
+    });
+
+    // Открытие формы
+    openPopupBtn.addEventListener("click", function () {
+        popup.style.display = "flex"; // Показываем форму
+        document.body.classList.add('locked'); // Блокируем прокрутку страницы
+    });
+
+    // Закрытие формы
+    closePopupBtn.addEventListener("click", function () {
+        popup.style.display = "none"; // Скрываем форму
+        document.body.classList.remove('locked'); // Разблокируем прокрутку
+    });
+
+    // Закрытие формы при клике вне формы
+    window.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none"; // Скрываем форму
+            document.body.classList.remove('locked'); // Разблокируем прокрутку
+        }
     });
 });

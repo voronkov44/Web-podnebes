@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/migration.css">
     <link rel="stylesheet" href="../styles/logistics.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -67,9 +68,11 @@
                 <h2 class="registration-visa">Оформление визы <span>в Китай</span></h2>
 
                 <p class="visa-subtitle">Срочное оформление визы<br>в Китай любого типа!</p>
-                <button class="visa-urgentle-button">Срочное оформление</button>
+                <button id="openPopup" class="visa-urgentle-button">Срочное оформление</button>
             </div>
         </div>
+
+
         <div class="photo-row">
             <div class="photo-container">
                 <img src="../img/orangeRectangle.png" alt="Photo 1" class="gallery-img" style="top: -255%; left: 1%;">
@@ -153,5 +156,8 @@
         <%- include('footer') %>
     </div>
 </div>
+
+    <!-- Подключаем popup.ejs -->
+    <%- include('popup') %>
 </body>
 </html>
