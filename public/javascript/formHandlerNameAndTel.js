@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Проверка на корректность телефона (разрешены цифры, +, (, ), -)
             const phoneRegex = /^[\d\+\(\)\-\s]+$/;
             if (!phoneRegex.test(phone)) {
-                errorMessage += "Номер телефона должен содержать только цифры и символы";
+                errorMessage += "Укажите, пожалуйста, корректный номер телефона";
                 document.getElementById("phone").value = ""; // Очистить поле телефона
                 valid = false;
             }

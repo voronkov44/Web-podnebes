@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("script.js загружен!"); // Проверка
+
     const menuBtn = document.getElementById("menuBtn");
     const closeBtn = document.getElementById("closeBtn");
     const sidebar = document.getElementById("sidebar");
@@ -8,6 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const openPopupButtons = document.querySelectorAll("#openPopup");
     const closePopupBtn = document.getElementById("closePopup");
     const popup = document.getElementById("popup");
+    const popupTitle = popup.querySelector(".popup-h2");
+
+    // Объект соответствия кнопок и заголовков
+    const popupTitles = {
+        "Срочное оформление": "Срочное оформление",
+        "Получить консультацию": "Получить консультацию",
+        "Заказать": "Заказать визу по акции",
+        "Оформить визу": "Оформить визу",
+        "Заказать услугу": "Заказать услугу"
+    };
 
     menuBtn.addEventListener("click", function () {
         sidebar.style.right = "0"; // Открываем меню
@@ -21,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     darkHome.addEventListener("click", function () {
         sidebar.style.right = "-260px"; // Закрываем меню
-        darkHome.style.display = "none"; // Убираем фон
+        darkHome.style.display = "none"; // Убираем затемнение
     });
 
     menuLinks.forEach(link => {
@@ -41,10 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
     // Добавляем обработчик на все кнопки "Заказать"
     openPopupButtons.forEach(button => {
         button.addEventListener("click", function () {
+            const buttonText = this.textContent.trim(); // Получаем текст кнопки
+            popupTitle.textContent = popupTitles[buttonText] || "Заказать визу"; // Устанавливаем заголовок
+
             popup.style.display = "flex"; // Показываем форму
             document.body.classList.add("locked"); // Блокируем прокрутку страницы
         });
