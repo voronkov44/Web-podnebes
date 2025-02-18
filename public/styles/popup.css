@@ -90,9 +90,17 @@ input {
     margin-top: 10px;
 }
 
+.a-policy {
+    font-weight: 300;
+    font-size: 15px;
+    color: inherit;
+    cursor: pointer;
+}
+
 .a-consent {
     font-weight: 300;
     font-size: 15px;
+    text-decoration: none;
 }
 
 input::placeholder {

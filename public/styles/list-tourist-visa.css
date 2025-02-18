@@ -447,6 +447,11 @@ h1 span {
     text-align: left;
 }
 
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
 .footer-text span {
     color: #ff8562;
 }
