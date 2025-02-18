@@ -43,6 +43,9 @@ app.get("/list-tourist-visa", (req, res) => {
     res.render("list-tourist-visa");
 });
 
+app.get("/policy", (req, res) => {
+    res.render("policy");
+});
 
 // Обработка 404 ошибки
 app.use((req, res) => {

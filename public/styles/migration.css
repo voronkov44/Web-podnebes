@@ -206,28 +206,3 @@ li::before {
     align-items: flex-start; /* Выравниваем контент влево */
     justify-content: flex-start; /* Убираем центрирование, текст начнется сверху */
 }
-
-.load-documents {
-    font-family: "Montserrat", sans-serif;
-    margin-top: 30px; /* Отступ сверху */
-    width: 300px; /* Задаем ширину кнопки */
-    padding: 12px;
-    background: #ff581d;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    display: block; /* Чтобы кнопка не растягивалась */
-    text-align: center;
-    position: relative; /* Позволяет центрировать */
-    left: 37%;
-    transition: all 0.3s ease-in-out;
-    border: none;
-}
-
-.load-documents:hover {
-    background: white;
-    color: black;
-    transform: scale(1.02);
-}
