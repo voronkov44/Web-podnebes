@@ -3,23 +3,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (form) {
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Отменяем стандартное поведение формы (перезагрузку страницы)
-            console.log('Форма отправлена'); // Лог для проверки
+            event.preventDefault(); // Отменяем стандартное поведение формы
+            console.log('Форма отправлена');
 
             const name = document.getElementById("name").value.trim();
             const phone = document.getElementById("phone").value.trim();
 
-            const messageContainer = document.getElementById("formMessage"); // Контейнер для сообщения
+            const messageContainer = document.getElementById("formMessage");
 
-            // Очищаем контейнер перед выводом нового сообщения
+            // Очищаем предыдущие сообщения
             messageContainer.innerHTML = '';
 
-            // Проверка на наличие значений в полях
             if (name && phone) {
-                console.log("Имя:", name);
+                console.log("Имя, фамилия:", name);
                 console.log("Телефон:", phone);
 
-                // Показываем сообщение об успешной отправке
+                // Выводим сообщение об успешной отправке
                 const successMessage = document.createElement("p");
                 successMessage.classList.add("success-message", "success");
                 successMessage.textContent = "Данные успешно отправлены!";
@@ -29,23 +28,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Очищаем форму после отправки
                 form.reset();
 
-                // Убираем сообщение через несколько секунд
-                setTimeout(function () {
-                    successMessage.remove();
-                }, 3000);
+                // Закрываем попап через 2 секунды
+                setTimeout(() => {
+                    document.getElementById("popup").classList.add("fade-out");
+                    setTimeout(() => {
+                        document.getElementById("popup").style.display = "none";
+                        document.body.classList.remove('locked');
+                    }, 500); // Ждём анимацию исчезновения
+                }, 2000);
             } else {
                 console.warn("Заполните все поля!");
 
                 const errorMessage = document.createElement("p");
                 errorMessage.classList.add("success-message", "error");
                 errorMessage.textContent = "Пожалуйста, заполните все поля!";
-
                 messageContainer.appendChild(errorMessage);
             }
-
-            // Закрываем попап
-            document.getElementById("popup").style.display = "none";
-            document.body.classList.remove('locked');
         });
     }
 });

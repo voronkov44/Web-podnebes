@@ -105,3 +105,17 @@ body.locked {
     color: red;
 }
 
+/* Анимация исчезновения попапа */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
