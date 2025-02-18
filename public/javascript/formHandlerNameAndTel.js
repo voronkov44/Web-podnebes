@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
 
+            // Очистка предыдущих ошибок перед новой отправкой
+            formMessage.innerHTML = "";
+
             const name = document.getElementById("name").value.trim();
             const phone = document.getElementById("phone").value.trim();
 

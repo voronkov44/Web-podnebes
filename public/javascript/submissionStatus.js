@@ -2,7 +2,7 @@ function showStatusPopup(success) {
     const popup = document.getElementById("statusPopup");
     const image = document.getElementById("statusImage");
     const text = document.getElementById("statusText");
-    const closeBtn = document.getElementById("closePopup");
+    const closeBtn = document.getElementById("closeStatusPopup");
 
     if (success) {
         image.src = "../img/orange_mark.png";
