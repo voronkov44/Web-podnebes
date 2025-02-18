@@ -180,6 +180,16 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.visa-strike-price {
+    position: absolute;
+    top: 15%; /* Подними на нужную высоту */
+    left: 10%;
+    font-size: 18px;
+    color: #bbb;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
 /* Заголовок */
 .visa-title {
     font-weight: 600;
@@ -191,10 +201,10 @@ body {
 /* Цена */
 .visa-price {
     top: 17%;
-    font-size: 21px;
+    font-size: 26px;
     margin-top: 15px;
     margin-bottom: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* Информация */
