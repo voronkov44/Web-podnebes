@@ -268,16 +268,29 @@ body {
     width: 90%;
 }
 
-@media (max-width: 768px) {
-    .type-visa-card {
-        width: 90%; /* На маленьких экранах карточка занимает почти всю ширину */
-    }
-
-    .visa-button {
-        width: 80%; /* Кнопка тоже адаптируется */
+@media (max-width: 1024px) {
+    .visa-card {
+        width: calc(50% - 30px); /* 2 карточки в ряд */
     }
 }
 
+@media (max-width: 768px) {
+    .visa-card {
+        width: 100%; /* Одна карточка в ряд */
+    }
+    .type_visa-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo-item img {
+        width: 40px;
+        height: 40px;
+    }
+    .visa-price-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .visa-process {
     text-align: center;

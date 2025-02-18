@@ -365,3 +365,110 @@ h2 {
     height: auto;
     text-align: left;
 }
+
+
+/* Для планшетов (ширина < 1024px) */
+@media screen and (max-width: 1024px) {
+    .center {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .road {
+        background-size: cover; /* Масштабируем фон */
+    }
+
+    .lines {
+        flex-direction: column; /* Столбец вместо ряда */
+        align-items: center;
+        gap: 40px;
+    }
+
+    .shape_1, .shape_2, .shape_3, .shape_4, .shape_5 {
+        width: 80%; /* Уменьшаем ширину элементов */
+        font-size: 16px; /* Уменьшаем текст */
+    }
+
+    .icon-item img {
+        width: 70%; /* Делаем иконки меньше */
+    }
+
+    .icon-text {
+        font-size: 20px; /* Уменьшаем текст */
+        bottom: 50px;
+    }
+
+    .cargo-form {
+        max-width: 90%; /* Уменьшаем форму */
+    }
+
+    .cargo-form-input {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+/* Для мобильных устройств (ширина < 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Уменьшаем заголовки */
+    }
+
+    .lines {
+        height: auto; /* Авто-высота */
+    }
+
+    .shape_1, .shape_2, .shape_3, .shape_4, .shape_5 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .icons-container {
+        flex-direction: column; /* Иконки в столбик */
+    }
+
+    .icon-item img {
+        width: 60%;
+    }
+
+    .cargo-form {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .cargo-submit-button {
+        width: 100%; /* Кнопка на всю ширину */
+    }
+
+    .under-button-text1,
+    .under-button-text2 {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+/* Для маленьких экранов (ширина < 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .shape_1, .shape_2, .shape_3, .shape_4, .shape_5 {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .cargo-form-input {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .icon-item img {
+        width: 50%;
+    }
+
+    .cargo-submit-button {
+        font-size: 14px;
+    }
+}
