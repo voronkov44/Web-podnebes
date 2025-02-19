@@ -1,2 +1,4 @@
 express
 ejs
+mysql2
+body-parser

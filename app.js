@@ -1,6 +1,29 @@
 const express = require("express");
 const path = require("path");
 
+const mysql = require("mysql2");
+const bodyParser = require("body-parser");
+
+// Подключение к БД
+const db = mysql.createConnection({
+    host: "localhost",     // Или адрес сервера
+    user: "root",          // Твой пользователь MySQL
+    password: "root",  // Пароль от MySQL
+    database: "podnebes"
+});
+
+// Проверяем подключение
+db.connect((err) => {
+    if (err) {
+        console.error("Ошибка подключения к MySQL:", err);
+    } else {
+        console.log("✅ Подключено к MySQL!");
+    }
+});
+
+
+
+
 const app = express();
 const PORT = process.env.PORT || 8000;
 
@@ -10,8 +33,34 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "public/templates"));
 
 
+// Добавляем обработку JSON и URL-кодированных данных
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // Раздача статических файлов
 app.use(express.static(path.join(__dirname, "public")));
+
+// Обработчик формы
+app.post("/submit-form", (req, res) => {
+    const { fullname, phone, type_request } = req.body;
+
+    if (!fullname || !phone || !type_request) {
+        return res.status(400).json({ error: "Все поля обязательны" });
+    }
+
+    const query = `
+        INSERT INTO applications (fullname, phone, type_request, type_status) 
+        VALUES (?, ?, ?, 0)
+    `;
+
+    db.query(query, [fullname, phone, type_request], (err, result) => {
+        if (err) {
+            console.error("Ошибка при добавлении данных:", err);
+            return res.status(500).json({ error: "Ошибка сервера" });
+        }
+        res.status(200).json({ message: "Данные успешно сохранены!" });
+    });
+});
 
 // Главная страница
 app.get("/", (req, res) => {
