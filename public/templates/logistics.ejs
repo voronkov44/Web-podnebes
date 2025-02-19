@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../javascript/logistics.js"></script>
+    <script src="../javascript/logistics-button.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -52,19 +53,19 @@
         <h2>Узнайте условия доставки<br>и рассчитайте её <span style="color: rgb(255, 88, 29);">стоимость</span></h2>
         <div class="cargo-form">
             <p class="form_title_name">Наименование груза</p>
-            <input type="text" name="Cargo name" class="cargo-form-input" placeholder="Например: автозапчасти">
+            <input type="text" id="cargo-name" name="Cargo name" class="cargo-form-input" placeholder="Например: автозапчасти">
             <div class="cargo-weight-volume">
                 <div class="weight_title_input">
                     <p class="form_title_weight">Вес груза</p>
                     <div class="unit_group">
-                        <input type="text" name="Cargo weight" class="cargo-form-input">
+                        <input type="text" id="cargo-weight" name="Cargo weight" class="cargo-form-input">
                         <span class="unit">кг</span>
                     </div>
                 </div>
                 <div class="volume_title_input">
                     <p class="form_title_volume">Объём груза</p>
                     <div class="unit_group">
-                        <input type="text" name="Cargo volume" class="cargo-form-input">
+                        <input type="text" id="cargo-volume" name="Cargo volume" class="cargo-form-input">
                         <span class="unit">м<sup>3</sup></span>
                     </div>
                 </div>
@@ -72,24 +73,24 @@
             <p class="form_title_name" style="margin-top: 20px;">Выберите вариант перевозки</p>
             <div class="Transportation_option">
                 <div class="cargo-form-input" style="width: 100%">
-                    <p><select>
-                            <option selected=1 value="a">Экспресс 1-2 дня</option>
-                            <option value="b">Авиа 11-12 дней</option>
-                            <option value="c">Ж/Д 22-25 дней</option>
-                            <option value="d">Морем 45-55 дней</option>
+                    <p><select id="transportation-option">
+                            <option selected=1 value="Экспресс 1-2 дня">Экспресс 1-2 дня</option>
+                            <option value="Авиа 11-12 дней">Авиа 11-12 дней</option>
+                            <option value="Ж/Д 22-25 дней">Ж/Д 22-25 дней</option>
+                            <option value="Морем 45-55 дней">Морем 45-55 дней</option>
                         </select></p>
                 </div>
-                </div>
+            </div>
             <p class="form_title_name" style="margin-top: 40px;">Цена доставки: 0$</p>
             <div class="enter-name-input" style="margin-top: 10px;">
-                <input type="text" name="enter name" class="cargo-form-input" placeholder="Введите имя">
-                <input type="text" name="enter phone" class="cargo-form-input" placeholder="Введите номер телефона">
+                <input type="text" id="user-name" name="enter name" class="cargo-form-input" placeholder="Введите имя">
+                <input type="text" id="user-phone" name="enter phone" class="cargo-form-input" placeholder="Введите номер телефона">
             </div>
-            <button class="cargo-submit-button">Отправить заявку</button>
-                <p class="under-button-text1">*Расчет стоимости носит ориентировочный характер. Для получения точного расчета заполните заявку и с вами свяжется наш менеджер</p>
-                <p class="under-button-text2">*Не является публичной офертой</p>
-        </div>
+            <button class="cargo-submit-button" id="submit-button">Отправить заявку</button>
+            <p class="under-button-text1">*Расчет стоимости носит ориентировочный характер. Для получения точного расчета заполните заявку и с вами свяжется наш менеджер</p>
+            <p class="under-button-text2">*Не является публичной офертой</p>
         </div>
     </div>
+</div>
 </div>
 </body>
