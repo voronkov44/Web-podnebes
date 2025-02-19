@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const name = document.getElementById("name").value.trim();
             const phone = document.getElementById("phone").value.trim();
+            const popupTitle = document.querySelector(".popup-h2")?.textContent.trim() || "Заказать визу";
 
             let errorMessage = "";
             let valid = true;
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Если ошибок нет, отправляем данные
+            console.log(`Заголовок popup: ${popupTitle}`);
             console.log(`Отправленные данные:\nИмя: ${name}\nТелефон: ${phone}`);
 
             form.reset();
