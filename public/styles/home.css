@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.a-policy {
+    font-weight: 300;
+    font-size: 15px;
+    color: inherit;
+    cursor: pointer;
+}
+
 .center {
     color: white;
     background-color: black;
