@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("submit-button").addEventListener("click", function(event) {
+    document.getElementById("submit-button").addEventListener("click", async function (event) {
         event.preventDefault(); // Отменяем стандартное поведение кнопки (чтобы страница не перезагружалась)
 
         // Получаем значения полей формы
@@ -46,5 +46,40 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Телефон:", userPhone);
 
         showStatusPopup(true); // Успех
+
+        fetch('/button-submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'  // Исправлено
+            },
+            body: JSON.stringify({
+                cargoName,
+                cargoWeight,
+                cargoVolume,
+                selectOption: transportationOption,  // Исправлено
+                userName,
+                userPhone
+            })
+        })
+            .then(response => response.json())  // Ожидаем JSON
+            .then(data => {
+                if (data.error) {
+                    console.error("Ошибка:", data.error);
+                    alert(data.error); // Вывод ошибки
+                } else {
+                    console.log("Успех:", data.message);
+                    showStatusPopup(true);
+
+                    document.getElementById("cargo-name").value = "";
+                    document.getElementById("cargo-weight").value = "";
+                    document.getElementById("cargo-volume").value = "";
+                    document.getElementById("transportation-option").value = "Экспресс 1-2 дня";
+                    document.getElementById("user-name").value = "";
+                    document.getElementById("user-phone").value = "";
+                }
+            })
+            .catch(error => {
+                console.error("Ошибка запроса:", error);
+            });
     });
 });

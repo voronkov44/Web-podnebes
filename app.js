@@ -62,6 +62,27 @@ app.post("/submit-form", (req, res) => {
     });
 });
 
+app.post("/button-submit", (req, res) => {
+    const { cargoName, cargoWeight, cargoVolume, selectOption, userName, userPhone } = req.body;
+
+    if (!cargoName || !cargoWeight || !cargoVolume || !selectOption || !userName || !userPhone) {
+        return res.status(400).json({ error: "Все поля обязательны" });
+    }
+
+    const query = `
+        INSERT INTO transportation (cargoName, cargoWeight, cargoVolume, selectOption, userName, userPhone) 
+        VALUES (?, ?, ?, ?, ?, ?)
+    `;
+
+    db.query(query, [cargoName, cargoWeight, cargoVolume, selectOption, userName, userPhone], (err, result) => {
+        if (err) {
+            console.error("Ошибка при добавлении данных:", err);
+            return res.status(500).json({ error: "Ошибка сервера" });
+        }
+        res.status(200).json({ message: "Данные успешно сохранены!" });
+    });
+});
+
 // Главная страница
 app.get("/", (req, res) => {
     res.render("home");  // Теперь мы используем EJS для рендеринга home.ejs

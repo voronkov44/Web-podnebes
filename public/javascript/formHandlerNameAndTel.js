@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!valid) {
                 formMessage.innerHTML = errorMessage;
-                formMessage.style.color = "red";
+                formMessage.style.color = "orange";
                 showStatusPopup(false);
                 return;
             }
@@ -51,20 +51,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (response.ok) {
                     formMessage.innerHTML = "Данные успешно отправлены!";
-                    formMessage.style.color = "green";
+                    formMessage.style.color = "lightgreen";
                     form.reset();
                     popup.style.display = "none";
                     document.body.classList.remove('locked');
                     showStatusPopup(true);
                 } else {
                     formMessage.innerHTML = result.error;
-                    formMessage.style.color = "red";
+                    formMessage.style.color = "";
                     showStatusPopup(false);
                 }
             } catch (error) {
                 console.error("Ошибка отправки запроса:", error);
                 formMessage.innerHTML = "Ошибка отправки данных!";
-                formMessage.style.color = "red";
+                formMessage.style.color = "orange";
                 showStatusPopup(false);
             }
         });
