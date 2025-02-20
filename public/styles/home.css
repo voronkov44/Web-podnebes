@@ -259,6 +259,11 @@ body {
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+    .container {
+        width: 100vw;
+        overflow: hidden;
+    }
+
     .visa-banner-content {
         width: 95%;
     }

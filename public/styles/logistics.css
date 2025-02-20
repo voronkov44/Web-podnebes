@@ -424,11 +424,11 @@ h2 {
     }
 
     h1 {
-        font-size: 0.2rem; /* Уменьшаем заголовки */
+        font-size: 10px; /* Уменьшаем заголовки */
     }
 
-    .lines {
-        height: auto; /* Авто-высота */
+    h2 {
+        font-size: 25px;
     }
 
     .icons-container {

@@ -270,47 +270,39 @@ li::before {
 
 /* Для мобильных устройств (ширина экрана до 768px) */
 @media screen and (max-width: 768px) {
-    .center {
-        color: white;
-        background-color: black;
-        padding-left: calc(50% - 600px);
-        padding-right: calc(50% - 600px);
-        margin-top: 2%;
-    }
 
     .background-image {
-        width: 165%;
+        width: 100%;
         margin-top: 0;
     }
 
     .container {
-        left: 15%;
         position: absolute;
         display: flex;
         flex-direction: row;
-        margin-top: 45px;
+        margin-top: 15px;
         gap: 2px;
     }
 
     .image-box {
-        width: 43%;
-        height: 43%;
+        width: 30%;
+        height: 30%;
     }
 
     .mig-button {
         font-size: 6px;
         width: 55%;
-        padding: 5px 8px;
+        padding: 2px 3px;
     }
 
 
     .overlay h2 {
-        font-size: 12px;
+        font-size: 7px;
         margin-top: -25px;
     }
 
     .overlay p {
-        font-size: 9px;
+        font-size: 6px;
         margin-bottom: 2px;
     }
 
