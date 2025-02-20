@@ -186,7 +186,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 /* Фото — увеличенное, адаптивное */
@@ -276,7 +275,7 @@ body {
     margin-bottom: 70px;
 }
 
-.gallery-img {
+.gallery-img-1 {
     position: relative;
     width: 280px; /* Увеличиваем ширину */
     height: 110px; /* Делаем их прямоугольными */
@@ -285,6 +284,58 @@ body {
     opacity: 0.9; /* 0 - полностью прозрачный, 1 - полностью видимый */
     transition: opacity 0.3s ease;
 }
+
+.gallery-img-2 {
+    position: relative;
+    width: 280px; /* Увеличиваем ширину */
+    height: 110px; /* Делаем их прямоугольными */
+    object-fit: cover; /* Центрируем и обрезаем */
+    border-radius: 8px;
+    opacity: 0.9; /* 0 - полностью прозрачный, 1 - полностью видимый */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-img-3 {
+    position: relative;
+    width: 280px; /* Увеличиваем ширину */
+    height: 110px; /* Делаем их прямоугольными */
+    object-fit: cover; /* Центрируем и обрезаем */
+    border-radius: 8px;
+    opacity: 0.9; /* 0 - полностью прозрачный, 1 - полностью видимый */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-img-4 {
+    position: relative;
+    width: 280px; /* Увеличиваем ширину */
+    height: 110px; /* Делаем их прямоугольными */
+    object-fit: cover; /* Центрируем и обрезаем */
+    border-radius: 8px;
+    opacity: 0.9; /* 0 - полностью прозрачный, 1 - полностью видимый */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-img-5 {
+    position: relative;
+    width: 280px; /* Увеличиваем ширину */
+    height: 110px; /* Делаем их прямоугольными */
+    object-fit: cover; /* Центрируем и обрезаем */
+    border-radius: 8px;
+    opacity: 0.9; /* 0 - полностью прозрачный, 1 - полностью видимый */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-img-6 {
+    position: relative;
+    width: 280px; /* Увеличиваем ширину */
+    height: 110px; /* Делаем их прямоугольными */
+    object-fit: cover; /* Центрируем и обрезаем */
+    border-radius: 8px;
+    opacity: 0.9; /* 0 - полностью прозрачный, 1 - полностью видимый */
+    transition: opacity 0.3s ease;
+}
+
+
 
 .icon {
     position: relative;
@@ -296,7 +347,7 @@ body {
     z-index: 2; /* Убедимся, что иконка будет поверх изображения */
 }
 
-.photo-text {
+.photo-text-1 {
     position: relative;
     color: white;
     font-size: 20px;
@@ -304,7 +355,56 @@ body {
     font-weight: bold;
     line-height: 1.2; /* Уменьшаем расстояние между строками, если нужно */
     z-index: 2;
+}
 
+.photo-text-2 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2; /* Уменьшаем расстояние между строками, если нужно */
+    z-index: 2;
+}
+
+.photo-text-3 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2; /* Уменьшаем расстояние между строками, если нужно */
+    z-index: 2;
+}
+
+.photo-text-4 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2; /* Уменьшаем расстояние между строками, если нужно */
+    z-index: 2;
+}
+
+.photo-text-5 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2; /* Уменьшаем расстояние между строками, если нужно */
+    z-index: 2;
+}
+
+.photo-text-6 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2; /* Уменьшаем расстояние между строками, если нужно */
+    z-index: 2;
 }
 
 /* Общий контейнер Акция */
@@ -477,8 +577,15 @@ footer {
         margin-bottom: 0;
     }
 
-    .promo-container {
-        left: 50px;
+    .promo-section {
+        margin-top: 10px;
+    }
+
+    .photo-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        margin-bottom: 0;
     }
 
     .consultation-text {
@@ -557,6 +664,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .photo-gallery {
+        left: 60%;
+    }
+
     .center {
         padding-left: 10%;
         padding-right: 10%;
@@ -592,7 +703,8 @@ footer {
     .visa-urgentle-button {
         width: 200px;
         height: 50px;
-        font-size: 20px;
+        font-size: 17px;
+        padding: 3px 8px;
     }
 
     .info-home {
