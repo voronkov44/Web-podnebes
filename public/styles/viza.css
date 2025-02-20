@@ -344,16 +344,30 @@ body {
         }
     }
 
+    .visa-heading {
+        margin-left: 30px;
+    }
+
+    .visa-price-heading {
+        font-size: 25px;
+    }
+
+    .visa-process-images {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
     .visa-card {
         width: 70%;
     }
 
     .step-ten-line {
-        width: 120px;
+        width: 100px;
     }
 
     .visa-process-text {
         gap: 25px;
+        margin-left: 50px;
     }
 
     .step-circle {

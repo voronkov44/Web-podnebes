@@ -474,14 +474,25 @@ footer {
 @media (max-width: 768px) {
     .promo-description {
         font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .promo-container {
+        left: 50px;
+    }
+
+    .consultation-text {
+        margin-left: 50px;
     }
 
     .promo-subtitle {
         font-size: 15px;
+        margin-bottom: 10px;
     }
 
     .promo-title {
-        font-size: 15px;
+        font-size: 20px;
+        margin-bottom: 0;
     }
 
     .promo-note {
