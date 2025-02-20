@@ -195,38 +195,6 @@
     }
 }
 
-/* БЛОК-АКЦИЯ*/
-@media (max-width: 768px) {
-    .promo-section {
-        margin-top: -700px;
-    }
-
-    .promo-content {
-        width: 50%;
-        max-width: 300px;
-    }
-
-    .promo-title {
-        font-size: 1.5rem;
-    }
-
-    .promo-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .promo-description {
-        font-size: 18px;
-    }
-
-    .promo-button {
-        font-size: 18px;
-        padding: 10px 40px;
-    }
-
-    .promo-note {
-        font-size: 12px;
-    }
-}
 
 /* КОНСУЛЬТАЦИЯ */
 @media (max-width: 768px) {
