@@ -258,23 +258,19 @@ body {
 }
 
 /* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .visa-banner-content {
-        width: 95%;
+        width: 75%;
     }
 
     .registration-visa {
-        font-size: 2rem;
+        font-size: 0.1rem;
     }
 
     .visa-subtitle {
-        font-size: 1.2rem;
+        font-size: 0.2rem;
     }
 
-    .visa-button {
-        font-size: 1rem;
-        padding: 12px 24px;
-    }
 }
 
 

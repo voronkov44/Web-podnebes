@@ -90,6 +90,10 @@ body {
         width: 48%; /* на маленьких экранах формочки занимают 48% от ширины */
     }
 
+    .visa-process {
+        left: 20%;
+    }
+
     .row {
         flex-direction: column;
         align-items: center;
