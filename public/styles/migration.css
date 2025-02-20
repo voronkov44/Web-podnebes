@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.center {
+    color: white;
+    background-color: black;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    margin-top: 2%;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #000; /* Черный фон */
@@ -262,21 +270,48 @@ li::before {
 
 /* Для мобильных устройств (ширина экрана до 768px) */
 @media screen and (max-width: 768px) {
+    .center {
+        color: white;
+        background-color: black;
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+        margin-top: 2%;
+    }
+
     .background-image {
-        width: 100%;
+        width: 165%;
         margin-top: 0;
     }
 
-    .image-box {
-        width: 80%;
+    .container {
+        left: 15%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        margin-top: 45px;
+        gap: 2px;
     }
 
+    .image-box {
+        width: 43%;
+        height: 43%;
+    }
+
+    .mig-button {
+        font-size: 6px;
+        width: 55%;
+        padding: 3px 6px;
+    }
+
+
     .overlay h2 {
-        font-size: 1.5rem;
+        font-size: 12px;
+        margin-top: 0px;
     }
 
     .overlay p {
-        font-size: 14px;
+        font-size: 9px;
+        margin-bottom: 2px;
     }
 
     .documents {
@@ -311,8 +346,8 @@ li::before {
     }
 
     .mig-button {
-        font-size: 14px;
-        padding: 8px 16px;
+        width: 55%;
+        font-size: 7px;
     }
 
     .document-list,

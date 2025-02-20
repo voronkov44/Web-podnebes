@@ -135,6 +135,10 @@ a {
         padding: 20px;
     }
 
+    .numbers {
+        width: 50%;
+    }
+
     .footer-text-left,
     .footer-text-right {
         align-items: center;

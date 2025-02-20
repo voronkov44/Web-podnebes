@@ -369,9 +369,13 @@ h2 {
 
 /* Для планшетов (ширина < 1024px) */
 @media screen and (max-width: 1024px) {
+
     .center {
-        padding-left: 5%;
-        padding-right: 5%;
+        color: white;
+        background-color: black;
+        padding-left: calc(50% - 100px);
+        padding-right: calc(50% - 100px);
+        margin-top: 2%;
     }
 
     .road {
@@ -410,17 +414,21 @@ h2 {
 
 /* Для мобильных устройств (ширина < 768px) */
 @media screen and (max-width: 768px) {
+
+    .center {
+        color: white;
+        background-color: black;
+        padding-left: calc(50% - 100px);
+        padding-right: calc(50% - 100px);
+        margin-top: 2%;
+    }
+
     h1 {
-        font-size: 1.8rem; /* Уменьшаем заголовки */
+        font-size: 0.2rem; /* Уменьшаем заголовки */
     }
 
     .lines {
         height: auto; /* Авто-высота */
-    }
-
-    .shape_1, .shape_2, .shape_3, .shape_4, .shape_5 {
-        font-size: 14px;
-        padding: 10px;
     }
 
     .icons-container {
