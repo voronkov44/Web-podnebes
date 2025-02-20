@@ -9,7 +9,7 @@ const db = mysql.createConnection({
     host: "localhost",     // Или адрес сервера
     user: "root",          // Твой пользователь MySQL
     password: "root",  // Пароль от MySQL
-    database: "podnebes"
+    database: "podnebesDB"
 });
 
 // Проверяем подключение
