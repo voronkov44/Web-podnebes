@@ -1,0 +1,322 @@
+
+@media (max-width: 1200px) {
+    .center {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .center {
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: center; /* Центрируем текст */
+    }
+}
+
+@media (max-width: 480px) {
+    .center {
+        padding-left: calc(10% - 800px);
+        padding-right: calc(10% - 800px);
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-home {
+        flex-direction: column; /* Размещаем блоки в колонку */
+        align-items: center;
+        gap: 15px; /* Оптимальный отступ */
+        padding-top: 10px;
+    }
+
+    .image-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo_2 {
+        max-width: 50px; /* Логотип уменьшаем, но не слишком */
+    }
+
+    .company {
+        max-height: 40px;
+    }
+
+    .icon-block {
+        flex-direction: column; /* Иконки в колонку */
+        align-items: center;
+        gap: 8px;
+        margin-top: -400px;
+        margin-left: -370px;
+    }
+
+    .icon-block img {
+        width: 24px; /* Компактные, но видимые иконки */
+    }
+
+    .phone-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Минимальное расстояние */
+    }
+
+    .phone-block a:nth-child(2) {
+        position: relative;
+        top: -420px; /* Подвигаем второй номер вверх */
+    }
+    .phone-block a:nth-child(1) {
+        position: relative;
+        top: -420px; /* Подвигаем второй номер вверх */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-home {
+        gap: 10px;
+        padding-top: 5px;
+    }
+
+    .image-block {
+        gap: 5px;
+    }
+
+    .logo_2 {
+        max-width: 40px;
+    }
+
+    .company {
+        max-height: 30px;
+    }
+
+    .icon-block img {
+        width: 20px;
+    }
+
+    .phone-block a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .visa-banner {
+        top: -50px; /* Поднимаем меньше */
+        max-width: 100%;
+    }
+
+    .visa-banner-content {
+        top: 35%; /* Смещаем выше */
+        left: 50%;
+        text-align: center; /* Центрируем текст */
+        width: 85%;
+        max-width: 600px;
+    }
+
+    .registration-visa {
+        font-size: 2rem; /* Уменьшаем заголовок */
+    }
+
+    .visa-subtitle {
+        font-size: 1.2rem; /* Подзаголовок меньше */
+        margin-top: 8px;
+    }
+
+    .visa-urgentle-button {
+        padding: 18px 28px; /* Компактная кнопка */
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .visa-banner {
+        top: -30px;
+    }
+
+    .visa-banner-content {
+        top: 40%;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .registration-visa {
+        font-size: 1.7rem;
+    }
+
+    .visa-subtitle {
+        font-size: 1rem;
+    }
+
+    .visa-urgentle-button {
+        padding: 14px 24px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .visa-banner {
+        top: -30px; /* Еще меньше сдвига */
+
+    }
+
+    .visa-banner-content {
+        top: 20%;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .registration-visa {
+        font-size: 0.8rem; /* Еще меньше заголовок */
+    }
+
+    .visa-subtitle {
+        font-size: 1rem;
+    }
+
+    .visa-urgentle-button {
+        padding: 1px 2px;
+        font-size: 1rem;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .photo-row {
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .gallery-img {
+        width: 220px;
+        height: 90px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        top: -15px;
+    }
+
+    .photo-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-row {
+        flex-direction: column; /* Фото идут в колонку */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .gallery-img {
+        width: 100%; /* Адаптивная ширина */
+        height: auto;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+    }
+
+    .photo-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-row {
+        gap: 15px;
+        margin-bottom: 330px;
+    }
+
+    .gallery-img {
+        width: 90%;
+        height: auto;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+        top: -50px;
+    }
+
+    .photo-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-section {
+        margin-top: -700px;
+    }
+
+    .promo-content {
+        width: 50%;
+        max-width: 300px;
+        margin-top: -700px;
+    }
+
+    .promo-title {
+        font-size: 1.5rem;
+    }
+
+    .promo-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .promo-description {
+        font-size: 18px;
+    }
+
+    .promo-button {
+        font-size: 18px;
+        padding: 10px 40px;
+    }
+
+    .promo-note {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultation-title {
+        font-size: 1.5rem;
+    }
+
+    .consultation-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn_cons {
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .consultation-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .consultation-title {
+        font-size: 1.4rem;
+    }
+
+    .consultation-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .btn_cons {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}

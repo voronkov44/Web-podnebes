@@ -257,25 +257,7 @@ body {
     color: #FF5722;
 }
 
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-    .visa-banner-content {
-        width: 95%;
-    }
 
-    .registration-visa {
-        font-size: 2rem;
-    }
-
-    .visa-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .visa-button {
-        font-size: 1rem;
-        padding: 12px 24px;
-    }
-}
 
 
 /* 6 формочек */
@@ -492,79 +474,3 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .center {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
-    .lines {
-        flex-direction: column;
-        gap: 50px;
-        height: auto;
-    }
-
-    .road {
-        background-size: cover;
-        margin-bottom: 15px;
-    }
-
-    .icons-container {
-        flex-direction: column;
-    }
-
-    .icon-item {
-        width: 100%;
-        text-align: center;
-    }
-
-    .cargo-form {
-        width: 100%;
-    }
-
-    .cargo-submit-button {
-        width: 100%;
-    }
-
-    .under-button-text1, .under-button-text2 {
-        width: 100%;
-        font-size: 14px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 1024px) {
-    .center {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .lines {
-        gap: 100px;
-    }
-
-    .cargo-form {
-        max-width: 500px;
-    }
-
-    .cargo-weight-volume {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .cargo-submit-button {
-        width: 80%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .center {
-        padding-left: calc(50% - 600px);
-        padding-right: calc(50% - 600px);
-    }
-}
