@@ -46,13 +46,6 @@
         max-height: 40px;
     }
 
-    .icon-block {
-        flex-direction: column; /* Иконки в колонку */
-        align-items: center;
-        gap: 8px;
-        margin-top: -400px;
-        margin-left: -370px;
-    }
 
     .icon-block img {
         width: 24px; /* Компактные, но видимые иконки */
@@ -64,22 +57,9 @@
         align-items: center;
         gap: 10px; /* Минимальное расстояние */
     }
-
-    .phone-block a:nth-child(2) {
-        position: relative;
-        top: -420px; /* Подвигаем второй номер вверх */
-    }
-    .phone-block a:nth-child(1) {
-        position: relative;
-        top: -420px; /* Подвигаем второй номер вверх */
-    }
 }
 
 @media (max-width: 480px) {
-    .info-home {
-        gap: 10px;
-        padding-top: 5px;
-    }
 
     .image-block {
         gap: 5px;
@@ -163,10 +143,6 @@
 
 /* 6-ИКОНОК */
 @media (max-width: 1024px) {
-    .photo-row {
-        gap: 30px;
-        margin-bottom: 50px;
-    }
 
     .gallery-img {
         width: 220px;
@@ -185,12 +161,6 @@
 }
 
 @media (max-width: 768px) {
-    .photo-row {
-        flex-direction: column; /* Фото идут в колонку */
-        gap: 20px;
-        align-items: center;
-    }
-
     .gallery-img {
         width: 100%; /* Адаптивная ширина */
         height: auto;
@@ -208,10 +178,6 @@
 }
 
 @media (max-width: 480px) {
-    .photo-row {
-        gap: 15px;
-        margin-bottom: 330px;
-    }
 
     .gallery-img {
         width: 90%;
@@ -238,7 +204,6 @@
     .promo-content {
         width: 50%;
         max-width: 300px;
-        margin-top: -700px;
     }
 
     .promo-title {

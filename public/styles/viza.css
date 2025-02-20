@@ -48,7 +48,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     border: 7px solid #424040; /* Добавлена рамка */
-
 }
 
 .visa-card .visa-img {
@@ -339,8 +338,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    .row.last-row {
+        .visa-card {
+            width: 70%;
+        }
+    }
+
     .visa-card {
-        width: 48%; /* на маленьких экранах формочки занимают 48% от ширины */
+        width: 70%;
     }
 
     .step-ten-line {

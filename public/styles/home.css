@@ -257,32 +257,6 @@ body {
     color: #FF5722;
 }
 
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-    .container {
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .visa-banner-content {
-        width: 95%;
-    }
-
-    .registration-visa {
-        font-size: 2rem;
-    }
-
-    .visa-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .visa-button {
-        font-size: 1rem;
-        padding: 12px 24px;
-    }
-}
-
-
 /* 6 формочек */
 .photo-gallery {
     position: relative;
@@ -498,6 +472,34 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .promo-description {
+        font-size: 12px;
+    }
+
+    .promo-subtitle {
+        font-size: 15px;
+    }
+
+    .promo-title {
+        font-size: 15px;
+    }
+
+    .promo-note {
+        font-size: 10px;
+    }
+
+    .promo-image img{
+        width: 150%;
+        height: 100%;
+    }
+
+    .promo-button {
+        width: 35%;
+        height: 50%;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
     .center {
         padding-left: 5%;
         padding-right: 5%;
@@ -571,5 +573,48 @@ footer {
     .center {
         padding-left: calc(50% - 600px);
         padding-right: calc(50% - 600px);
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .visa-urgentle-button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .info-home {
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+
+    .icon-block {
+        margin-right: 0;
+    }
+
+    .visa-banner {
+        margin-top: 80px;
+    }
+    .container {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .visa-banner-content {
+        width: 95%;
+    }
+
+    .registration-visa {
+        font-size: 2rem;
+    }
+
+    .visa-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .visa-button {
+        font-size: 1rem;
+        padding: 12px 24px;
     }
 }
