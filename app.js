@@ -46,7 +46,7 @@ app.post("/submit-form", (req, res) => {
         }
 
         // Отправка данных в Telegram
-        const message = `📌 *Новая заявка*:\n👤 Имя: ${fullname}\n📞 Телефон: ${phone}\n📌 Тип запроса: ${type_request}`;
+        const message = `📌 *Новая заявка*:\n👤 Имя : ${fullname}\n📞 Телефон: ${phone}\n📌 Тип запроса: ${type_request}`;
         sendTelegramMessage(message);
 
         res.status(200).json({ message: "Данные успешно сохранены!" });
