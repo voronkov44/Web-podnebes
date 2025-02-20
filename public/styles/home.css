@@ -313,6 +313,7 @@ body {
     border-radius: 8px;
     opacity: 0.9; /* 0 - полностью прозрачный, 1 - полностью видимый */
     transition: opacity 0.3s ease;
+
 }
 
 .gallery-img-5 {
@@ -413,7 +414,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px 20px;
-    margin-top: -530px; /* Отступ сверху */
+    margin-top: -500px; /* Отступ сверху */
     margin-bottom: -50px; /* Отступ снизу */
     z-index: 2;
 }
@@ -576,7 +577,7 @@ footer {
         font-size: 12px;
         margin-bottom: 0;
     }
-
+    
     .promo-section {
         margin-top: 10px;
     }
