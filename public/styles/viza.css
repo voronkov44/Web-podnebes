@@ -85,25 +85,6 @@ body {
     width: 30%; /* Оставляем одинаковый размер карточек */
 }
 
-@media (max-width: 768px) {
-    .visa-card {
-        width: 48%; /* на маленьких экранах формочки занимают 48% от ширины */
-    }
-
-    .visa-process {
-        left: 20%;
-    }
-
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .center {
-        width: 80%;
-    }
-}
-
 .visa-heading {
     font-size: 2rem;
     font-weight: bold; /* Жирный текст */
@@ -282,30 +263,6 @@ body {
     width: 90%;
 }
 
-@media (max-width: 1024px) {
-    .visa-card {
-        width: calc(50% - 30px); /* 2 карточки в ряд */
-    }
-}
-
-@media (max-width: 768px) {
-    .visa-card {
-        width: 100%; /* Одна карточка в ряд */
-    }
-    .type_visa-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .photo-item img {
-        width: 40px;
-        height: 40px;
-    }
-    .visa-price-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .visa-process {
     text-align: center;
     padding: 90px;
@@ -373,4 +330,54 @@ body {
     font-weight: 400;
     margin-top: 30px;
     color: #e5e5e5;
+}
+
+@media (max-width: 1024px) {
+    .visa-card {
+        width: calc(50% - 30px); /* 2 карточки в ряд */
+    }
+}
+
+@media (max-width: 768px) {
+    .visa-card {
+        width: 48%; /* на маленьких экранах формочки занимают 48% от ширины */
+    }
+
+    .step-ten-line {
+        width: 120px;
+    }
+
+    .visa-process-text {
+        gap: 25px;
+    }
+
+    .step-circle {
+        width: 55px;
+    }
+
+    .visa-process {
+        left: 20%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center {
+        width: 80%;
+    }
+
+    .type_visa-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo-item img {
+        width: 40px;
+        height: 40px;
+    }
+    .visa-price-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
