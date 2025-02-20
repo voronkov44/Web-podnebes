@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 // Подключение к БД
 const db = mysql.createConnection({
     host: "localhost",     // Или адрес сервера
-    user: "root",          // Твой пользователь MySQL
+    user: "user2",          // Твой пользователь MySQL
     password: "root",  // Пароль от MySQL
     database: "podnebesDB"
 });
