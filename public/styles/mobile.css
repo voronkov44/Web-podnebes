@@ -8,16 +8,16 @@
 
 @media (max-width: 768px) {
     .center {
-        padding-left: calc(10% - 800px);
-        padding-right: calc(10% - 800px);
+        padding-left: calc(2% - 200px);
+        padding-right: calc(2% - 200px);
         text-align: center; /* Центрируем текст */
     }
 }
 
 @media (max-width: 480px) {
     .center {
-        padding-left: calc(10% - 800px);
-        padding-right: calc(10% - 800px);
+        padding-left: calc(1% - 100px);
+        padding-right: calc(1% - 100px);
         text-align: center;
     }
 }
