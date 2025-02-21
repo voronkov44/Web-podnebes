@@ -86,6 +86,7 @@ a {
         padding: 20px;
         gap: 20px;
         position: relative;
+        width: 150%;
     }
 
     .footer-images {
@@ -133,6 +134,7 @@ a {
         align-items: center;
         text-align: center;
         padding: 20px;
+        width: 150%;
     }
 
     .numbers {
