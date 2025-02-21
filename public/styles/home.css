@@ -338,7 +338,7 @@ body {
 
 
 
-.icon {
+.icon-1 {
     position: relative;
     width: 55px; /* Размер иконки */
     height: 55px; /* Размер иконки */
@@ -347,6 +347,28 @@ body {
     transform: translateX(-50%); /* Для выравнивания по центру */
     z-index: 2; /* Убедимся, что иконка будет поверх изображения */
 }
+
+.icon-2 {
+    position: relative;
+    width: 55px; /* Размер иконки */
+    height: 55px; /* Размер иконки */
+    top: -20px; /* Располагаем иконку на 20px выше */
+    left: 50%;
+    transform: translateX(-50%); /* Для выравнивания по центру */
+    z-index: 2; /* Убедимся, что иконка будет поверх изображения */
+}
+
+
+.icon-3 {
+    position: relative;
+    width: 55px; /* Размер иконки */
+    height: 55px; /* Размер иконки */
+    top: -20px; /* Располагаем иконку на 20px выше */
+    left: 50%;
+    transform: translateX(-50%); /* Для выравнивания по центру */
+    z-index: 2; /* Убедимся, что иконка будет поверх изображения */
+}
+
 
 .photo-text-1 {
     position: relative;
@@ -573,6 +595,41 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .icon-1 {
+        top: -80px !important;
+        left: -142px !important;
+    }
+
+    .icon-2 {
+        top: -80px !important;
+        left: -142px !important;
+    }
+
+    .icon-3 {
+        top: -80px !important;
+        left: -142px !important;
+    }
+
+    .photo-text-1 {
+        top: -75px !important;
+    }
+
+    .photo-text-2 {
+        top: -75px !important;
+    }
+
+
+    .photo-text-3 {
+        top: -75px !important;
+    }
+
+    .visa-subtitle {
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 15px;
+    }
+
     .btn_cons {
         padding: 6px 12px;
         font-size: 20px;
@@ -725,10 +782,11 @@ footer {
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     .visa-urgentle-button {
-        width: 200px;
+        width: 250px;
         height: 50px;
         font-size: 17px;
         padding: 3px 8px;
+        margin-left: 15px;
     }
 
     .info-home {
@@ -753,7 +811,7 @@ footer {
     }
 
     .registration-visa {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .visa-button {
