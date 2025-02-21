@@ -573,8 +573,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .btn_cons {
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+
+    .consultation-subtitle {
+        font-size: 20px;
+    }
+
     .promo-description {
-        font-size: 12px;
+        display: flex;
+        align-items: flex-start;
+        font-size: 10px;
         margin-bottom: 0;
     }
 
@@ -594,16 +605,26 @@ footer {
     }
 
     .promo-subtitle {
-        font-size: 15px;
-        margin-bottom: 10px;
+        display: flex;
+        font-size: 12px;
+        margin-bottom: 2px;
     }
 
     .promo-title {
-        font-size: 20px;
-        margin-bottom: 0;
+        margin-right: 105px;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 1px;
+        display: flex;
+        justify-content: center;
     }
 
     .promo-note {
+        font-size: 10px;
+        margin-right: 100px;
+    }
+
+    .a-policy {
         font-size: 10px;
     }
 
@@ -616,7 +637,9 @@ footer {
         width: 35%;
         height: 50%;
         font-size: 15px;
-        padding: 5px 10px;
+        padding: 2px 3px;
+        margin-bottom: 0;
+        margin-right: 105px;
     }
 
     .center {
@@ -721,7 +744,7 @@ footer {
         margin-top: 80px;
     }
     .container {
-        width: 100vw;
+        width: 110vw;
         overflow: hidden;
     }
 
@@ -731,10 +754,6 @@ footer {
 
     .registration-visa {
         font-size: 2rem;
-    }
-
-    .visa-subtitle {
-        font-size: 1.2rem;
     }
 
     .visa-button {

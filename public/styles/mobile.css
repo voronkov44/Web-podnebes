@@ -208,11 +208,6 @@ body, html {
     .consultation-subtitle {
         font-size: 1.2rem;
     }
-
-    .btn_cons {
-        font-size: 18px;
-        padding: 15px 25px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -228,10 +223,11 @@ body, html {
 
     .consultation-subtitle {
         font-size: 1.1rem;
+        text-align: left;
     }
 
     .btn_cons {
         font-size: 16px;
-        padding: 12px 20px;
+        align-items: flex-start;
     }
 }
