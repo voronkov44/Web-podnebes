@@ -655,6 +655,7 @@ footer {
         flex-direction: column;
         margin-top: -100px;
         margin-bottom: 0;
+        gap: 10px;
     }
 
     .consultation-text {
