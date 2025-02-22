@@ -601,11 +601,12 @@ footer {
 
     .order-visa-text1 {
         width: 140%;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .order-visa-text2 {
         width: 140%;
+        font-size: 18px;
     }
 
     .icon-1 {
@@ -644,11 +645,11 @@ footer {
     }
 
     .btn_cons {
-        padding: 15px 30px;
-        font-size: 18px;
-        margin-right: 100px;
-        height: 70px;
-        width: 300px;
+        padding: 2px 3px;
+        font-size: 15px;
+        margin-left: 45px;
+        height: 65px;
+        width: 250px;
     }
 
     .consultation-subtitle {
@@ -726,7 +727,7 @@ footer {
 
     h1 {
         gap: 5px;
-        font-size: 25px;
+        font-size: 20px;
         width: 400px;
         margin-right: 150px;
         left: -40px;
