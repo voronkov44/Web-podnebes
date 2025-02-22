@@ -595,6 +595,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .order-visa-text {
+        margin-top: 5px;
+    }
+
+    .order-visa-text1 {
+        width: 140%;
+        font-size: 20px;
+    }
+
+    .order-visa-text2 {
+        width: 140%;
+    }
+
     .icon-1 {
         top: -80px !important;
         left: -142px !important;
@@ -631,12 +644,17 @@ footer {
     }
 
     .btn_cons {
-        padding: 6px 12px;
-        font-size: 20px;
+        padding: 15px 30px;
+        font-size: 18px;
+        margin-right: 100px;
+        height: 70px;
+        width: 300px;
     }
 
     .consultation-subtitle {
-        font-size: 20px;
+        font-size: 16px;
+        margin-right: 70px;
+        line-height: 20px;
     }
 
     .promo-description {
@@ -655,7 +673,7 @@ footer {
         flex-direction: column;
         margin-top: -80px;
         margin-bottom: -50px;
-        gap: 10px;
+        gap: 0px;
     }
 
     .consultation-text {
@@ -695,9 +713,10 @@ footer {
         width: 35%;
         height: 50%;
         font-size: 15px;
-        padding: 2px 3px;
-        margin-bottom: 0;
+        padding: 10px 20px;
+        margin-bottom: 10px;
         margin-right: 105px;
+        margin-top: 15px;
     }
 
     .center {
@@ -706,8 +725,11 @@ footer {
     }
 
     h1 {
-        font-size: 1.8rem;
-        text-align: center;
+        gap: 5px;
+        font-size: 25px;
+        width: 400px;
+        margin-right: 150px;
+        left: -20px;
     }
 
     .lines {
@@ -719,15 +741,48 @@ footer {
     .road {
         background-size: cover;
         margin-bottom: 15px;
+        margin-left: 20px;
     }
 
     .icons-container {
-        flex-direction: column;
+        flex-direction: row;
+        width: 150%;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-left: -25px;
     }
 
-    .icon-item {
+    .cargo-form input[type="text"] {
+        width: 150%;
+    }
+
+    .cargo-form-input select {
+        width: 150%;
+    }
+
+
+    .form_title_volume,
+    .form_title_weight,
+    .form_title_name {
+        font-size: 18px;
+        width: 500px;
+        margin-top: -15px;
+    }
+
+    .icon-item-plane {
+        top: -7px;
+        height: 145px;
+    }
+
+    .icon-text {
+        font-size: 11px;
+    }
+
+    .icon-item-plane img,
+    .icon-item img{
         width: 100%;
         text-align: center;
+        margin-right: 0;
     }
 
     .cargo-form {
@@ -768,8 +823,11 @@ footer {
         gap: 15px;
     }
 
-    .cargo-submit-button {
-        width: 80%;
+    .under-button-text1,
+    .under-button-text2 {
+        display: flex;
+        text-align: left;
+        width: 350px;
     }
 }
 
@@ -800,7 +858,7 @@ footer {
     }
 
     .visa-banner {
-        margin-top: 80px;
+        margin-top: 20px;
     }
     .container {
         width: 110vw;
