@@ -26,62 +26,45 @@ body {
 
 .container-visa-v-Kitay {
     max-width: 1200px;
-    margin:  auto;
+    margin: auto;
     padding: 20px;
-
-}
-
-.row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-    gap: 30px; /* Добавляем расстояние между формочками */
+    flex-wrap: wrap;
+    justify-content: center; /* Центрируем элементы */
+    gap: 20px; /* Уменьшаем расстояние между формами */
 }
 
 .visa-card {
-    color: #333; /* Черный цвет */
-    border-radius: 35px; /* Увеличен радиус углов */
-    overflow: visible; /* Разрешаем выходить содержимому */
-    width: 40%;
+    width: 35%; /* Оставляем текущий размер */
     text-align: center;
     padding: 17px;
+    border: 7px solid #424040;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
     position: relative;
-    border: 7px solid #424040; /* Добавлена рамка */
 }
 
-.visa-card .visa-img {
-    position: absolute; /* Абсолютное позиционирование для фотографии */
-    top: -50px; /* Поднимаем фотографию над формочкой */
+.visa-img {
+    position: absolute;
+    top: -25px;
     left: 50%;
-    transform: translateX(-50%); /* Центрируем фотографию по горизонтали */
-    width: 80px; /* Уменьшаем фотографию до квадратной формы */
-    height: 80px; /* Делаем высоту равной ширине */
-    border-radius: 5px; /* Округляем края фотографии */
-    overflow: visible; /* Чтобы фотография не скрывалась */
-    z-index: 1; /* Фотография будет сверху */
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
 }
 
-.visa-card .visa-img img {
+.visa-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.visa-card .text-container {
-    position: relative; /* Для текста внутри */
-    color: #ffffff; /* Белый текст */
+.text-container {
+    color: #ffffff;
     font-size: 1.5rem;
-    font-weight: bold; /* Жирный текст */
-    padding-top: 15px; /* Отступ сверху для текста */
-}
-
-.row.last-row {
-    justify-content: center; /* Центрируем последний ряд */
-}
-
-.row.last-row .visa-card {
-    width: 30%; /* Оставляем одинаковый размер карточек */
+    font-weight: bold;
+    padding-top: 15px;
 }
 
 .visa-heading {
@@ -399,8 +382,22 @@ body {
         margin-top: 0;
     }
 
+    .container-visa-v-Kitay {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        grid-template-rows: repeat(5, auto); /* 5 рядов */
+        gap: 25px; /* Еще меньшее расстояние */
+    }
+
     .visa-card {
-        width: 70%;
+        width: 100%;
+    }
+
+    .text-container {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 15px;
     }
 
     .step-ten-line {

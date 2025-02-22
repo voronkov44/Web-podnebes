@@ -10,94 +10,23 @@
 <main>
     <h1 class="Visa-v-Kitay">Визы в Китай</h1>
     <div class="container-visa-v-Kitay">
-        <div class="row">
+        <% let visas = [
+            "Туристическая", "Бизнес", "Визит",
+            "Рабочая", "Семейная", "Студенческая / Учебная",
+            "Транзитная", "Виза бортпроводника", "Виза по лечению",
+            "Пребывание 30/60/90/180/360 дней"
+        ]; %>
+
+        <% visas.forEach((visa, index) => { %>
             <div class="visa-card">
                 <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 1">
-                </div>
-                <div class="text-container" style="line-height: 34px;">
-                    <p>Туристическая</p>
-                </div>
-            </div>
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 2">
+                    <img src="../img/doublemark.png" alt="Фото <%= index + 1 %>">
                 </div>
                 <div class="text-container">
-                    <p>Бизнес</p>
+                    <p><%= visa %></p>
                 </div>
             </div>
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 3">
-                </div>
-                <div class="text-container">
-                    <p>Визит</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 4">
-                </div>
-                <div class="text-container">
-                    <p>Рабочая</p>
-                </div>
-            </div>
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 5">
-                </div>
-                <div class="text-container">
-                    <p>Семейная</p>
-                </div>
-            </div>
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 6">
-                </div>
-                <div class="text-container">
-                    <p>Студенческая / Учебная</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 7">
-                </div>
-                <div class="text-container">
-                    <p>Транзитная</p>
-                </div>
-            </div>
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 8">
-                </div>
-                <div class="text-container">
-                    <p>Виза бортпроводника</p>
-                </div>
-            </div>
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 9">
-                </div>
-                <div class="text-container">
-                    <p>Виза по лечению</p>
-                </div>
-            </div>
-        </div>
-        <div class="row last-row">
-            <div class="visa-card">
-                <div class="visa-img">
-                    <img src="../img/doublemark.png" alt="Фото 10">
-                </div>
-                <div class="text-container">
-                    <p>Пребывание<br>30/60/90/180/360 дней</p>
-                </div>
-            </div>
-        </div>
+        <% }) %>
     </div>
     <div class="visa-heading">Оформляем любой <span>тип виз</span></div>
 
