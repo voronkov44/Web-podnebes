@@ -339,6 +339,30 @@ body {
 }
 
 @media (max-width: 768px) {
+    .discount-text {
+        font-size: 10px;
+    }
+
+    .visa-info {
+        font-size: 13px;
+    }
+
+    .visa-price {
+        font-size: 22px;
+    }
+
+    .visa-strike-price {
+        font-size: 14px;
+    }
+
+    .visa-title {
+        font-size: 18px;
+    }
+
+    .type-visa-image img{
+        width: 90%;
+    }
+
     .step-title {
         font-size: 15px;
     }
@@ -362,11 +386,12 @@ body {
     }
 
     .visa-heading {
-        margin-left: 30px;
+        margin-left: 20px;
+        font-size: 20px;
     }
 
     .visa-price-heading {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .visa-process-images {

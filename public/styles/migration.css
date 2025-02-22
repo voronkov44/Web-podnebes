@@ -274,14 +274,13 @@ li::before {
 
     .background-image {
         width: 100%;
-        margin-top: 0;
     }
 
     .container {
         position: absolute;
         display: flex;
         flex-direction: row;
-        margin-top: 15px;
+        margin-top: -30px;
         gap: 2px;
     }
 
