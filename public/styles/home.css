@@ -663,6 +663,8 @@ footer {
         align-items: flex-start;
         font-size: 10px;
         margin-bottom: 0;
+        margin-left: 5px;
+        width: 350px;
     }
 
     .promo-section {
@@ -685,10 +687,11 @@ footer {
         display: flex;
         font-size: 12px;
         margin-bottom: 2px;
+        margin-left: 20px;
     }
 
     .promo-title {
-        margin-right: 105px;
+        margin-right: 65px;
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 1px;
@@ -698,7 +701,7 @@ footer {
 
     .promo-note {
         font-size: 10px;
-        margin-right: 100px;
+        margin-right: 60px;
     }
 
     .a-policy {
@@ -712,12 +715,11 @@ footer {
 
     .promo-button {
         width: 35%;
-        height: 50%;
         font-size: 15px;
-        padding: 10px 20px;
-        margin-bottom: 10px;
-        margin-right: 105px;
-        margin-top: 15px;
+        padding: 9px 14px;
+        margin-bottom: 5px;
+        margin-right: 60px;
+        margin-top: 10px;
     }
 
     .center {
