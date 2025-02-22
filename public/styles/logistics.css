@@ -397,8 +397,9 @@ h2 {
     }
 
     .icon-text {
-        font-size: 20px; /* Уменьшаем текст */
-        bottom: 50px;
+        font-size: 9px; /* Уменьшаем текст */
+        bottom: 40px;
+        font-weight: bold;
     }
 
     .cargo-form {
