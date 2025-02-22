@@ -112,6 +112,7 @@ body {
     object-fit: cover;
 }
 
+.line-delete,
 .line {
     width: 30px; /* Длина линии */
     height: 2px;
