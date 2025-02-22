@@ -729,7 +729,7 @@ footer {
         font-size: 25px;
         width: 400px;
         margin-right: 150px;
-        left: -20px;
+        left: -40px;
     }
 
     .lines {
@@ -741,7 +741,7 @@ footer {
     .road {
         background-size: cover;
         margin-bottom: 15px;
-        margin-left: 20px;
+        margin-left: 12px;
     }
 
     .icons-container {
