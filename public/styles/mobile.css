@@ -184,11 +184,8 @@ body, html {
 /* КОНСУЛЬТАЦИЯ */
 @media (max-width: 768px) {
     .consultation-title {
-        font-size: 1.5rem;
-    }
-
-    .consultation-subtitle {
-        font-size: 1.2rem;
+        font-size: 16px !important;
+        margin-right: 25px;
     }
 }
 
@@ -197,15 +194,6 @@ body, html {
         flex-direction: column;
         text-align: center;
         gap: 15px;
-    }
-
-    .consultation-title {
-        font-size: 1.4rem;
-    }
-
-    .consultation-subtitle {
-        font-size: 1.1rem;
-        text-align: left;
     }
 
     .btn_cons {

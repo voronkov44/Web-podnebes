@@ -112,6 +112,7 @@ body {
     object-fit: cover;
 }
 
+.line-delete,
 .line {
     width: 30px; /* Длина линии */
     height: 2px;
@@ -332,12 +333,44 @@ body {
 }
 
 @media (max-width: 1024px) {
+    .discount-text {
+        font-size: 10px;
+    }
+
+    .info-row {
+        font-size: 13px;
+    }
+
     .visa-card {
         width: calc(50% - 30px); /* 2 карточки в ряд */
     }
 }
 
 @media (max-width: 768px) {
+    .line-delete {
+        width: 0px;
+    }
+
+    .type_visa-container {
+        display: flex;
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+        justify-content: center;
+        gap: 10px; /* Расстояние между элементами */
+    }
+
+    .visa-strike-price {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .visa-price {
+        font-size: 20px;
+    }
+
+    .type-visa-image img {
+        width: 90%;
+    }
+
     .step-title {
         font-size: 15px;
     }
@@ -361,11 +394,12 @@ body {
     }
 
     .visa-heading {
-        margin-left: 30px;
+        font-size: 20px;
+        margin-top: -10px;
     }
 
     .visa-price-heading {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .visa-process-images {
@@ -407,16 +441,14 @@ body {
         width: 80%;
     }
 
-    .type_visa-container {
-        flex-direction: column;
-        align-items: center;
-    }
     .photo-item img {
         width: 40px;
         height: 40px;
     }
+
     .visa-price-container {
         flex-direction: column;
         align-items: center;
     }
+
 }

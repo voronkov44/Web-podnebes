@@ -209,6 +209,13 @@ h1{
     align-items: center;
 }
 
+.icon-item-plane {
+    position: relative; /* Для позиционирования текста */
+    text-align: center; /* Выравнивание текста по центру */
+    flex-direction: column;
+    align-items: center;
+}
+
 .icon-text {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -415,21 +422,21 @@ h2 {
     .line_1 {
         position: absolute;
         left: 1%;
-        top: -190px;
-        height: 100px;
+        top: -210px;
+        height: 120px;
     }
 
     .shape_1 {
         font-size: 10px;
-        width: 80px;
+        width: 90px;
         height: 40px;
     }
 
     .line_2{
         position: absolute;
         left: 30%;
-        top: -185px;
-        height: 100px;
+        top: -205px;
+        height: 120px;
     }
 
     .shape_2 {
@@ -440,22 +447,22 @@ h2 {
 
     .line_3 {
         position: absolute;
-        left: 50%;
-        top: -270px;
+        left: 53%;
+        top: -268px;
         height: 100px;
     }
 
     .shape_3 {
         font-size: 10px;
-        width: 85px;
+        width: 100px;
         height: 40px;
     }
 
     .line_4 {
         position: absolute;
         left: 70%;
-        top: -234px;
-        height: 180px;
+        top: -214px;
+        height: 160px;
 }
 
     .shape_4 {
@@ -485,12 +492,10 @@ h2 {
         margin-top: 2%;
     }
 
-    h1 {
-        font-size: 10px; /* Уменьшаем заголовки */
-    }
-
-    h2 {
-        font-size: 25px;
+    .h2-form {
+        font-size: 20px;
+        width: 500px;
+        margin-left: -12px;
     }
 
     .icons-container {
