@@ -409,8 +409,10 @@ body {
     }
 
     .type_visa-container {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+        justify-content: center;
+        gap: 10px; /* Расстояние между элементами */
     }
     .photo-item img {
         width: 40px;
